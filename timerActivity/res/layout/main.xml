@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/hello"
+	    />
+	<TextView android:text="@string/LapTime" android:id="@+id/LapTime" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:textSize="30sp"  android:gravity="center_horizontal"></TextView>
+	<LinearLayout android:id="@+id/LinearLayout02" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:gravity="center_horizontal">
+
+		<Button android:text="@string/StartBtn" android:id="@+id/StartBtn" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="@string/StopBtn" android:id="@+id/StopBtn" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+	</LinearLayout>
+</LinearLayout>
