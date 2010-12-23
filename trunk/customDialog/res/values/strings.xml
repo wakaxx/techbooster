@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, customDialogActivity!</string>
+    <string name="app_name">customDialog</string>
+<string name="input_text">Input Text</string>
+<string name="button">Custom Dialog</string>
+<string name="dialog_name">Input Dialog</string>
+</resources>
