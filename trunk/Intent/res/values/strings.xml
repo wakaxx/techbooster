@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, intentActivity!</string>
+    <string name="app_name">intentActivity</string>
+<string name="button01">Send Intent</string>
+<string name="sub">This page is Sub layout file</string>
+<string name="sub_name">subActivity</string>
+</resources>
