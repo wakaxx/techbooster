@@ -1,0 +1,19 @@
+#summary One-sentence summary of this page.
+
+= 記事一覧 =
+
+== InputEventで入力デバイスを特定する ==
+ * http://techbooster.jpn.org/application/2449/ 
+ * http://techbooster.googlecode.com/svn/trunk/InputEventActivity
+
+== MotionEventでマルチタッチを検出する ==
+ * http://techbooster.jpn.org/application/2299/
+ * http://techbooster.googlecode.com/svn/trunk/MultiMotionEventActivity
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
