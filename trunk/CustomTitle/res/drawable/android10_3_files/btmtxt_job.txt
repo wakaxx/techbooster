@@ -1,0 +1,12 @@
+jobList = [
+	[],
+	['http://www.atmarkit.co.jp/job/map/','あなたの年収で分かる、ITエンジニアとしての市場価値  『＠IT年収MAP』',"var s=s_gi('itmediacojpglobal');s.eVar8='map_tech_footer';s.tl(this,'o','map_tech_footer');"],
+	['https://www.atmarkit.co.jp/job/ja/jauser/','エンジニア求人に復活の兆し！ 続々と「転職成功」の報告が届いています。',"var s=s_gi('itmediacojpglobal');s.eVar8='ja_tech_footer';s.tl(this,'o','ja_tech_footer');"],
+	['https://www.atmarkit.co.jp/job/ja/package/package.html','＜転職のための7つ道具＞ 必要な書類テンプレートが無料ダウンロードできる！ ',"var s=s_gi('itmediacojpglobal');s.eVar8='package_tech_footer';s.tl(this,'o','package_tech_footer');"],
+	[]
+];
+jobPut = new Array;
+for(i = 1; i < jobList.length - 1; i++){
+	jobPut[i] = '<div><a href="' + jobList[i][0] + '" onC' + 'lick="' + jobList[i][2] + '">' + jobList[i][1] + '</a></div>';
+	document.write(jobPut[i]);
+}

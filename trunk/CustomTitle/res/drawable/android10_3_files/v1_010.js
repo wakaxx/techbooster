@@ -1,0 +1,1 @@
+document.write("<a href=\"http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,5e280720/784200530/ITTO1/56828/300636858.300635794.52528/300929565/100274/784200530:ITTO1:*/g/https://www.atmarkit.co.jp/job/ja/jauser/\" target=\"_self\">  ITエンジニア向け“転職成功への登竜門”<br>「＠ITジョブエージェント」登録受付中！  </a>    \n");
