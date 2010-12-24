@@ -1,0 +1,36 @@
+
+atit = [
+["http://www.atmarkit.co.jp/misc/ct.php?id=EV0Z0102","/parts/images/cms/atitSEM02_1_1289916407.gif","■東京会場:12/1 ■大阪会場:12/8 [参加無料]"]
+];
+im = [
+["http://www.atmarkit.co.jp/misc/ct.php?id=EV0Z0103","/parts/images/cms/imSEM02_1_1289916407.gif","■東京会場:12/1 ■大阪会場:12/8 [参加無料]"]
+];
+function shuffle(list) {
+  var i = list.length;
+  while (--i) {
+    var j = Math.floor(Math.random() * (i + 1));
+    if (i == j) continue;
+    var k = list[i];
+    list[i] = list[j];
+    list[j] = k;
+  }
+  return list;
+}
+if(document.URL.match(/www\.atmarkit\.co\.jp\/f/) || document.URL.match(/komaba\.atmarkit\.co\.jp\/f/) ){
+	document.write('<div class="seminarBox">');
+	document.write('<h2>セミナー情報</h2>');
+	data = shuffle(atit);
+	for(n=0;n<1 ;n++){
+		document.write('<p><a href="' + data[n][0] + '"><img src="' + data[n][1] + '"><small>' + data[n][2] + '</small></a></p>');
+	}
+	document.write('</div>');
+}
+if(document.URL.match(/www\.atmarkit\.co\.jp\/im/) || document.URL.match(/komaba\.atmarkit\.co\.jp\/im/) ){
+	document.write('<div class="seminarBox-im">');
+	document.write('<h2>セミナー情報</h2>');
+	data = shuffle(im);
+	for(n=0;n<1 ;n++){
+		document.write('<p><a href="' + data[n][0] + '"><img src="' + data[n][1] + '"><small>' + data[n][2] + '</small></a></p>');
+	}
+	document.write('</div>');
+}

@@ -1,0 +1,1345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja"><head>
+<!-- #BeginTemplate "/Templates/fjava01.dwt" --><!-- DW6 -->
+
+<!-- #BeginEditable "doctitle" --> 
+<title>Androidのホーム画面に常駐するアプリを作るには (3/3) - ＠IT</title>
+<style type="text/css">
+<!--
+@import url("/fjava/stylesheet/m_fjava.css");
+-->
+</style>
+<!-- #EndEditable -->
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css">
+<script type="text/javascript" src="android10_3_files/common.js"></script>
+<script type="text/javascript" src="android10_3_files/jquery.js"></script>
+<script type="text/javascript" src="android10_3_files/bbs_json.js"></script>
+<link rel="stylesheet" href="android10_3_files/articles.css" type="text/css" media="all">
+<link rel="stylesheet" href="android10_3_files/fjavaarticle.css" type="text/css" media="all">
+</head><body>
+<a name="articletop"></a>
+<!-- wrap -->
+<div id="wrap">
+<div id="gnavi"><ul><li><a href="http://www.atmarkit.co.jp/" target="_top">＠IT</a></li><li><a href="http://core.atmarkit.co.jp/" target="_top">＠IT CORE</a></li><li><a href="http://www.atmarkit.co.jp/im/" target="_top">＠IT情報マネジメント</a></li><li><a href="http://monoist.atmarkit.co.jp/">＠IT MONOist</a></li><li><a href="http://jibun.atmarkit.co.jp/" target="_top">＠IT自分戦略研究所</a></li><li><a href="http://www.atmarkit.co.jp/job/" target="_top">JOB＠IT</a></li><li><a href="http://www.itmedia.co.jp/" target="_top">ITmedia</a></li><li><a href="http://techtarget.itmedia.co.jp/" target="_top">TechTarget</a></li><li><a href="http://bizmakoto.jp/" target="_top">誠</a></li><li><a href="http://eetimes.jp/">EE Times</a></li></ul></div>
+<div id="header" class="gnavi-box">
+<div id="header_l"><a href="http://www.atmarkit.co.jp/index.html"><img src="android10_3_files/logo_header.gif" alt="アットマーク・アイティ　ITエキスパートのための問題解決メディア" style="border: 0px none;" height="64" width="92"></a></div>
+<div id="header_r">
+<div id="search" class="searcht">
+<script type="text/javascript">
+function encuri() {
+	location.assign('http://www.atmarkit.co.jp/misc/search/search_ver02.html?cx=002351675112469469566:kxfahjlc-8o&q=' + encodeURIComponent(document.qform.q.value) + '&cof=FORID%3A9');
+}
+</script>
+<!-- Google CSE Search Box Begins -->
+<form name="qform" onsubmit="return false;" id="searchbox_002351675112469469566:kxfahjlc-8o" action="">
+<input name="cx" value="002351675112469469566:kxfahjlc-8o" type="hidden">
+<input name="cof" value="FORID:9" type="hidden">
+<input style="background: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" class="q-box" name="q" size="25" onkeypress="if (event.keyCode == 13) encuri();" type="text">
+<input class="submit" src="android10_3_files/top_google_but.gif" name="sa" value="検索" onclick="encuri();" type="image">
+<input value="www.atmarkit.co.jp/fjava/rensai4/android10/android10_3.html" name="siteurl" type="hidden"></form>
+<script type="text/javascript" src="android10_3_files/brand"></script>
+<!-- Google CSE Search Box Ends -->
+</div>
+</div>
+<div id="header_ad">
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITN";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_008.js"></script><map name="map_300930514"> <area coords="0,0,728,90" href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=79,0f754c71/784200575/ITN/57697/300637835.300636738.53250/300930514/100668/784200530:ITN:*/g/https://enq.itmedia.co.jp/on24/form/257041" target="_top" alt=""> </map> 
+<img src="android10_3_files/sb_ctc_1108.gif" usemap="#map_300930514" alt="" height="90" width="728" border="0"> <noscript>  <IMG SRC="http://img.itmedia.jp/so/images/sa/b/286/293591/300637835/sb_ctc_1108.gif" WIDTH="728" HEIGHT="90" usemap="#map_300930514" BORDER="0" ALT="">  </noscript>  
+
+<noscript>
+ <iframe height=90 width=728 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITN&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+
+</div>
+</div>
+<div id="navibar">
+<div class="navibar_styl">
+  <a href="http://www.atmarkit.co.jp/">＠IT総合トップ</a> &gt; <a href="http://core.atmarkit.co.jp/">＠IT CORE</a> &gt; <a href="http://www.atmarkit.co.jp/fjava/">Java Solution</a> &gt; 
+  <!-- #BeginEditable "navititle" -->Androidのホーム画面に常駐するアプリを作るには<!-- #EndEditable --></div>
+</div>
+<!-- main -->
+<div id="main">
+<!-- centercol -->
+<div id="centercol">
+<div id="headmenu" style="height: 15px; margin-right: 5px;">
+<!-- other -->
+<!-- 特別誘導枠 -->
+<!--
+<span class="pr-l"style="display:block;float:left;text-align:left;">
+<p style="margin:1px 0 0 0;">
+<img src="/parts/images/icon/pr.gif" style="float: left; padding-top: 1px;">
+<a href="http://www.atmarkit.co.jp/misc/ct.php?id=EV0Y2631" style="font-size:12px;font-weight:normal;float:left;">&nbsp;三木編集長：「皆さん、クラウドは嫌いですか？」（11/26）</a>
+</p>
+</span>
+-->
+<!-- 特別誘導枠 -->
+
+
+<span class="r">
+<script type="text/javascript"><!--
+document.write('<span id="b-twitter" style="padding-right:5px;"><a target="_blank" href="http://twitter.com/home?status=' + encodeURIComponent(document.title) + ' ' + location.href.replace('aitcms-w','www') + '" onClick="design' + "Cnt('core_twitter ', location.h" + 'ref)" title="Twitterでみんなに教える" alt="この記事をTwitterでみんなに教える"><img src="/parts/images/icon/icon_twitter.gif" border="0" align="absmiddle"></a></span>');
+// --></script><span id="b-twitter" style="padding-right: 5px;"><a target="_blank" href="http://twitter.com/home?status=Android%E3%81%AE%E3%83%9B%E3%83%BC%E3%83%A0%E7%94%BB%E9%9D%A2%E3%81%AB%E5%B8%B8%E9%A7%90%E3%81%99%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%82%8B%E3%81%AB%E3%81%AF%20%283%2F3%29%20-%20%EF%BC%A0IT%20http://www.atmarkit.co.jp/fjava/rensai4/android10/android10_3.html" onclick="designCnt('core_twitter ', location.href)" title="Twitterでみんなに教える" alt="この記事をTwitterでみんなに教える"><img src="android10_3_files/icon_twitter.gif" align="absmiddle" border="0"></a></span>
+<a href="javascript:location.href='http://slashdot.jp/slashdot-it.pl?op=basic&amp;url='+encodeURIComponent(location.href)" onclick="designCnt('atit_slashdot ', location.href)"><img src="android10_3_files/slashdot_icon.gif" alt="スラッシュドット" title="スラッシュドットにタレコむ！" align="absmiddle" border="0"></a>&nbsp;
+<a href="javascript:location.href='http://itmedia.kwout.com/grab?address='+encodeURIComponent(location.href)" title="ブログに書く" onclick="designCnt('atit_kwout ', location.href)"><img src="android10_3_files/kwout.gif" title="ブログに書く" align="absmiddle" border="0"></a>&nbsp;
+<a href="javascript:location.href='http://b.hatena.ne.jp/entry/'+encodeURI(location.href)" onclick="designCnt('atit_hatebu ', location.href)" title="はてなブックマークに登録"><img src="android10_3_files/b_entry.gif" alt="はてなブックマーク" align="absmiddle" border="0"></a>&nbsp;
+<a href="javascript:void%20window.open('http://bookmarks.yahoo.co.jp/action/bookmark?t='+encodeURIComponent(document.title)+'&amp;u='+encodeURIComponent(window.location.href)+'&amp;fr=ybm_itmedia');" title="Yahoo!ブックマークに登録" onclick="designCnt('atit_Y! ', location.href)"><img src="android10_3_files/sb_yahoo.gif" alt="Yahoo!ブックマークに登録" style="margin-left: 2px;" align="absmiddle" border="0"></a>
+&nbsp;<a onclick="designCnt('atit_print ', location.href);" href="http://www.atmarkit.co.jp/club/print/print.php" title="印刷"><img src="android10_3_files/ico_printer3.gif" alt="印刷" align="absmiddle" border="0"></a></span></div>
+<!-- MODIPHI_CONTENTS_START -->
+
+
+
+
+<!-- #BeginEditable "contents" --><a href="http://www.atmarkit.co.jp/fjava/index/index_android.html" target="_blank"><img src="android10_3_files/title.gif" alt="Androidで動く携帯Javaアプリ作成入門" height="50" width="500" border="0"><br>
+<div align="right"><font size="2"><strong>連載インデックスへ</strong></font></div>
+</a>
+
+  <font color="#107131" size="2"><b>Androidで動く携帯Javaアプリ作成入門（10）</b></font><br>
+    <br>
+<h1><font color="#0069ad" size="4">Androidのホーム画面に常駐するアプリを作るには</font></h1>
+        <br>
+      <font size="2"><a href="http://www.eflow.jp/" target="_blank">株式会社イーフロー</a><br>
+緒方聡<br>
+2009/9/28</font><br>
+<br>
+<h2><a name="06" id="06"></a><img src="android10_3_files/icon_002.gif" height="60" width="40" align="absmiddle"> <font size="4"><b>AppWidgetを指定した間隔ごとに実行するには</b></font></h2>
+<p>　AppWidgetを指定した間隔ごとに実行するには、android:updatePeriodMillisを用いる処理方法があります。サンプルの「SlideShow」というウィジェットがこの方法を用いています。</p>
+<table width="106" align="center" border="0" cellpadding="3" cellspacing="0">
+  <tbody><tr>
+    <td width="100"><font color="#666666"><img src="android10_3_files/08.gif" alt="図8　指定期間ごとにイメージを再表示" height="455" width="320" border="0"></font></td>
+  </tr>
+  <tr>
+    <td><b><font size="2">図8　指定期間ごとにイメージを再表示</font></b></td>
+  </tr>
+</tbody></table>
+<p>　ソースコードは、以下のようになっています。</p>
+<div class="m_code_android">
+  <pre><code>public class SlideShow extends AppWidgetProvider {
+    
+    static int index = 0;
+    
+    int[] images = {
+        R.drawable.g0,
+        R.drawable.g1,
+        R.drawable.g2,
+        R.drawable.g3,
+        R.drawable.g4,
+        R.drawable.g5,
+        R.drawable.g6,
+        R.drawable.g7,
+    };
+    
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.slide_show);
+        remoteViews.setImageViewResource(R.id.ImageView01, images[index]);
+        index = ++index % images.length;
+        ComponentName thisWidget = new ComponentName(context, SlideShow.class);
+        appWidgetManager.updateAppWidget(thisWidget, remoteViews);
+    
+}</code></pre>
+</div>
+<p>　まず、必要なのがAppWidgetProviderクラスを継承して作らなければならないということです。そして、繰り返し呼び出されるonUpdate()メソッドをオーバーライドする必要があります。</p>
+<p>　やっていることは、onUpdate()メソッドが呼び出されるたびに、リソース内の画像を<strong>RemoteVies</strong>クラスを経由して順番に設定しています。画像を指定するindexがなぜstaticかというと、<strong>onUpdate()メソッドが呼び出されるたびに、このクラスのインスタンスが再生成される</strong>ためです。</p>
+<h3><font size="3"><b><font color="#107131">■ </font>AppWidgetでサービスを用いるには</b></font></h3>
+<p>　通常は、コールバックメソッドではこういった処理は行わずに、サービスを起動して、サービス内で処理を行うようにします。サンプルの「WhatTimeIsItNow」というウィジェットがサービスを用いる最も簡単な例です。</p>
+<table width="106" align="center" border="0" cellpadding="3" cellspacing="0">
+  <tbody><tr>
+    <td width="100"><font color="#666666"><img src="android10_3_files/09.gif" alt="図9　秒刻みのデジタル時計" border="0"></font></td>
+  </tr>
+  <tr>
+    <td><b><font size="2">図9　秒刻みのデジタル時計</font></b></td>
+  </tr>
+</tbody></table>
+<p>　ソースコードは、以下のようになっています。</p>
+<div class="m_code_android">
+  <pre><code>public class WhatTimeIsItNow extends AppWidgetProvider {
+    
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        Intent intent = new Intent(context, MyService.class);
+        context.startService(intent);
+    }
+    
+    public static class MyService extends Service {
+        @Override
+        public void onStart(Intent intent, int startId) {
+            RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.what_time_is_it_now);
+            remoteViews.setTextViewText(R.id.TextView01, new Date().toLocaleString());
+            
+            ComponentName thisWidget = new ComponentName(this, WhatTimeIsItNow.class);
+            AppWidgetManager manager = AppWidgetManager.getInstance(this);
+            manager.updateAppWidget(thisWidget, remoteViews);
+        }
+    
+        @Override
+        public IBinder onBind(Intent intent) {
+            return null;
+        }
+    }
+}</code></pre>
+</div>
+<p>　onUpdate()メソッドはサービスを起動するだけ、起動されたサービスは実行後即終了します。処理が軽くても重くても、常にこのようにサー
+ビスを起動して処理をするのが望ましいです。このサービスはAndroidManifest.xmlに登録されていなければなりません。サービスの登録方
+法は、連載第7回の「<a href="http://www.atmarkit.co.jp/fjava/rensai4/android07/android07_3.html#04" target="_blank">サービスを使用するための設定</a>」を参照してください。</p>
+<h3><font size="3"><b><font color="#107131">■ </font>しかし、問題が多い</b></font></h3>
+<p>　さて、WhatTimeIsItNowは、ホームスクリーンに1秒刻みのデジタル時計を表示するウィジェットですが、こんなウィジェットを作るのはお勧めできません。</p>
+<ol>
+  <li><font size="2">1秒ごとにonUpdate()メソッドが呼び出される</font></li>
+  <li><font size="2">バックグラウンドでも（ウィジェットが隠れていても）1秒ごとにonUpdate()メソッドが呼び出される</font></li>
+  <li><font size="2">ほかのアプリの動作まで重くなる</font></li>
+  <li><font size="2">電池の消耗が激しい</font></li>
+</ol>
+<p>　特に3．と4．は大きな問題です。</p>
+<p>　グーグルが公開しているサンプルは、1日1回だけインターネットに「今日の言葉」を取りにいってそれを表示するウィジェットです。確かに1日1回
+ぐらいであれば、まったく問題にならないので、私もandroid:updatePeriodMillisを用いるのであれば、多くても1時間に1回ぐら
+いの更新頻度に収めるのがよいのではないかと思います。</p>
+<p>　android:updatePeriodMillis以外の方法としてAlarmManagerを用いる方法もあるので、ここからは、AlarmManagerの使い方を説明します。</p>
+<h2><a name="07" id="07"></a><img src="android10_3_files/icon_002.gif" height="60" width="40" align="absmiddle"> <font size="4"><b>AppWidgetを指定した時間に実行するには</b></font></h2>
+<p>　android:updatePeriodMillisをAlarmManagerに置き換えるメリットはいくつかあります。</p>
+<ul>
+  <li><font size="2">android:updatePeriodMillisと同じことができる（コーディングは必要）</font></li>
+  <li><font size="2">android:updatePeriodMillisと異なり期間を調整可能（コーディングだから）</font></li>
+</ul>
+<p>　要するに、設定ファイルに期間を指定すると、コーディングは必要ないけど細かい動作は変更できず、AlarmManagerを使用すると、コーディングは必要だけど細かく動作を設定できる、ということです。</p>
+<p>　サンプルの「AlarmManagerSample」というウィジェットが、AlarmManagerを使用する例です。このウィジェットは1時間に1度、0分0秒ちょうどに表示を更新する時報アプリです。</p>
+<p>　詳しくはソースファイル全体を見ていただくとして、ここではAlarmManagerを使用している個所にフォーカスして説明します。</p>
+<div class="m_code_android">
+  <pre><code>private void setAlarm(Context context) {
+    Intent alarmIntent = new Intent(context, AlarmManagerSample.class);
+    alarmIntent.setAction(ACTION_START_MY_ALARM);
+    PendingIntent operation = PendingIntent.getBroadcast(context, 0, alarmIntent, 0);
+    AlarmManager am = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
+    long now = System.currentTimeMillis() + 1; // + 1 は確実に未来時刻になるようにする保険
+    long oneHourAfter = now + interval - now % (interval);
+    am.set(AlarmManager.RTC, oneHourAfter, operation);
+}</code></pre>
+</div>
+<p>　3行目のACTION_START_MY_ALARMは、自分で勝手に定義したアクションです。自分で送って自分で受け取るアクションなので、パッケージ名やクラス名を内部に含み、ユニークになるようにしています。</p>
+<p>　作成したIntentから「<strong>PendingIntent</strong>」を作成し、それをAlarmManagerに時刻とともに設定しています。AlarmManager#set(int, long, PendingIntent)メソッドの第1引数には、この場合は<strong>AlarmManager.RTC</strong>か<strong>AlarmManager.ELAPSED_REALTIME</strong>のどちらかの定数を使用するのが望ましいです。これらを使用すると、デバイスをwake upしません。</p>
+<p>　このサンプルでは1時間おきにしていますが、例えば真夜中は頻度を減らしたり、逆に真夜中だから頻度を増やしたり、ということが、自分でコーディングしているからこそ可能になります。</p>
+<p>　なお、自分で自分に<a href="http://www.atmarkit.co.jp/fjava/rensai4/android03/android03_1.html" target="_blank"><strong>Intent</strong></a>を時刻指定で送信しているので、受信時に次の自分のためのIntentの準備を忘れないようにしてください。</p>
+<p>　今回、この連載で初めて出てきたPendingIntentというものは、Intentを文字通り<strong>ペンディング</strong>するための便利な入れ物です。次に説明するクリックを用いた処理方法でも、このPendingIntentを使用します。 </p>
+<table height="275" hspace="2" width="490" align="CENTER" border="0" cellpadding="5" cellspacing="0">
+  <tbody><tr bgcolor="#107131">
+    <td height="22"><h2><b><font color="#ffffff" size="2">コラム　「タイミングを見計らってIntentを発信するPendingIntentとは」</font></b></h2></td>
+  </tr>
+  <tr bgcolor="#e7f3ff">
+    <td height="253" bgcolor="#e7f3ff"><font size="2">PendingIntentは、Intentをタイミングを見計らって発信する便利なツールです。以下のような使い方が可能です。</font>
+        <ul>
+          <li><font size="2"><strong>時刻を指定してIntentを発信</strong></font></li>
+          <li><strong><font size="2">イベントハンドラの代わりにIntentを発信</font></strong></li>
+        </ul>
+      <font size="2">&nbsp; </font><font size="2">また、PendingIntentの作り方によって、Intentの飛び先をあらかじめ決められます。<br>
+        <br>
+        </font>
+        <table width="490" align="center" bgcolor="#000000" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr bgcolor="#e7f3ff">
+            <td width="322" align="left"><font size="2"><b>表3　PendingIntentのメソッド</b></font></td>
+          </tr>
+          <tr>
+            <td height="52"><table width="490" border="0" cellpadding="2" cellspacing="1">
+                <tbody><tr bgcolor="#107131">
+                  <td width="157" align="center"><font color="#ffffff" size="2"><strong>メソッド</strong></font></td>
+                  <td width="322" align="center"><font color="#ffffff" size="2"><b>説明</b></font></td>
+                </tr>
+                <tr bgcolor="#ffffff">
+                  <td align="center" bgcolor="#e7f3ff"><font size="2"><strong>getActivity(…)</strong></font></td>
+                  <td align="left" bgcolor="#e7f3ff"><font size="2">Activityを起動するPendingIntentの取得</font></td>
+                </tr>
+                <tr bgcolor="#ffffff">
+                  <td align="center" bgcolor="#e7f3ff"><font size="2"><strong>getBroadcast(…)</strong></font></td>
+                  <td align="left" bgcolor="#e7f3ff"><font size="2">ブロードキャストを投げるPendingIntentの取得</font></td>
+                </tr>
+                <tr bgcolor="#ffffff">
+                  <td align="center" bgcolor="#e7f3ff"><font size="2"><strong>getService(…)</strong></font></td>
+                  <td align="left" bgcolor="#e7f3ff"><font size="2">Serviceを起動するPendingIntentの取得</font></td>
+                </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table>
+      <br>
+        <font size="2">処理対象があらかじめActivityやServiceに絞り込めている場合、これらを使用するのが効果
+的です。今回のサンプルではsetBroadcast()メソッドとsetService()メソッドを使用しているので、ソースコード参照して使い方を
+習得してください。</font></td>
+  </tr>
+</tbody></table>
+<br>
+<h2><a name="09" id="09"></a><img src="android10_3_files/icon_002.gif" height="60" width="40" align="absmiddle"> <font size="4"><b>AppWidgetをクリック時に実行するには</b></font></h2>
+<p>　サンプルの「ClickSample」というウィジェットが、ウィジェットでクリックイベントを拾う例です。</p>
+<table width="106" align="center" border="0" cellpadding="3" cellspacing="0">
+  <tbody><tr>
+    <td width="100"><font color="#666666"><img src="android10_3_files/10.gif" alt="図10　ウィジェットでクリックイベントを拾うサンプル" border="0"></font></td>
+  </tr>
+  <tr>
+    <td><b><font size="2">図10　ウィジェットでクリックイベントを拾うサンプル</font></b></td>
+  </tr>
+</tbody></table>
+<p>　テキスト部分またはボタンをクリックすると、現在時刻を表示するサンプルです。</p>
+<div class="m_code_android">
+  <pre><code>RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.click_sample);
+Intent clickIntent = new Intent();
+clickIntent.setAction(ACTION_MY_CLICK);
+PendingIntent pendingIntent = PendingIntent.getService(this, 0, clickIntent, 0);
+remoteViews.setOnClickPendingIntent(R.id.TextView01, pendingIntent);
+remoteViews.setOnClickPendingIntent(R.id.Button01, pendingIntent);</code></pre>
+</div>
+<p>　上記コードは、RemoteViews経由でGUIコンポーネントにPendingIntentを設定している個所です。</p>
+<p>　まず、RemoteViewsを作成し、次にIntentを作成します。作成したIntentにはアクションを設定していますが、これはサービス
+でフィルタするためにユニークな文字列が必要です。パッケージ名やクラス名を組み合わせるのがよいでしょう。この文字列の内容で
+AndroidManifest.xmlにもフィルタを設定します。</p>
+<p>　次に、PendingIntentを作成します。作成したPendingIntentを、任意のGUIコンポーネントに設定すれば完了です。</p>
+<p>　これだけで、設定したGUIコンポーネントをクリックすれば、サービスにIntentが飛んできて、Service#onStart()メソッドが呼び出されます。</p>
+<h2><a name="10" id="10"></a><img src="android10_3_files/icon_002.gif" height="60" width="40" align="absmiddle"> <font size="4"><b>AppWidgetを使う際の2つの注意点</b></font></h2>
+<p>　AppWidgetは開発者にとって制限があるものの、ホームスクリーンに常駐できるというメリットが開発者にとっても、エンドユーザーにとって
+も魅力的です。AppWidgetの設定画面をActivityで作成したり、PendingIntentを使用してActivityと連携させたり、
+サービスを使い捨てないようにしたりすることで、さらにウィジェットがパワフルになると思います。</p>
+<p>　最後に、本記事執筆中に気が付いた点を紹介して終わりにしようと思います。</p>
+<h3><font size="3"><b><font color="#107131">■ </font>ウィジェット起動時に空きスペースがない場合</b></font></h3>
+<p>　ホームスクリーンにセルの空きがない状態でウィジェットを起動してしまったら、以下のようなメッセージは出ますが、その後表示がされないまま、ずっと裏で動いていることになります。</p>
+<table width="106" align="center" border="0" cellpadding="3" cellspacing="0">
+  <tbody><tr>
+    <td width="100"><font color="#666666"><img src="android10_3_files/11.gif" alt="図11　空きスペースがない場合の処理" border="0"></font></td>
+  </tr>
+  <tr>
+    <td><b><font size="2">図11　空きスペースがない場合の処理</font></b></td>
+  </tr>
+</tbody></table>
+<p>　この状態になると、エンドユーザーはこの表示されないウィジェットを削除できず、またプログラム的にも表示させるようにすることはできません。こ
+のメッセージが出るのは、最初のonUpdate()メソッドが呼び出される前なので、「プログラム的に事前にチェックする」ということもできません。端
+末を再起動しても表示されない状態で起動したままです。さらに悪いことに、エンドユーザーは表示されていない状態でウィジェットが起動していることに気が
+付かないでしょう。</p>
+<p>　Android 1.5時点での、唯一この状態を打開する策は、該当のウィジェットをアンインストールすることだけです。</p>
+<h3><font size="3"><b><font color="#107131">■ </font>ほかのウィジェットの不具合の影響を受ける可能性がある</b></font></h3>
+<p>　例えば、「Foo」というウィジェットがonUpdate()メソッドでNullPointerExceptionなどの例外などを発生させてしまった場合、「Bar」というウィジェットの動作が不安定になってしまうことがあるようです。</p>
+<p>　この場合、メッセージが出て、どのウィジェットに問題があるかはエンドユーザーが分かるかもしれないので（メッセージが不親切なので、推測しなければならない）、事態は空きスペースがないときより幾分ましです。</p>
+<p>　開発時に自分のウィジェットで例外を発生させてしまった場合、やはりその後の開発に支障をきたしてしまうことがあります。そうなった場合は、いったん該当のウィジェットを削除して、エミュレータを再起動すれば修復します。</p>
+<h3><b><font color="#107131" size="2">■ </font></b><font size="2">＠IT関連記事</font></h3>
+<br>
+<table width="390" align="center" border="0" cellpadding="7" cellspacing="0">
+  <tbody><tr>
+    <td valign="top" width="40"><a href="http://www.atmarkit.co.jp/fwcr/rensai2/google_int_01/01.html"><img src="android10_3_files/icon_s_002.gif" height="60" width="40" border="0"></a></td>
+    <td colspan="2" valign="top"><font size="2"><b><a href="http://www.atmarkit.co.jp/fwcr/rensai2/google_int_01/01.html">Androidアプリで高速描画チューニングをするコツ</a></b></font><b><br>
+      </b><font size="2"><b>インタビュー特集：Google直伝！（1）　</b>Googleのさまざまなサービスを使いこなすコツをグーグル担当者に聞くインタビュー。初回は日本で端末販売がせまるAndroidについて </font>
+      <div align="right"><font color="#666666" size="2">「<a href="http://www.atmarkit.co.jp/fwcr/index.html">リッチクライアント ＆ 帳票</a>」フォーラム 2009/4/21</font></div></td>
+  </tr>
+</tbody></table>
+<table width="390" align="center" border="0" cellpadding="7" cellspacing="0">
+  <tbody><tr>
+    <td height="74" valign="top" width="40"><a href="http://www.atmarkit.co.jp/fwcr/rensai2/mobileria01/01.html"><img src="android10_3_files/icon.gif" height="60" width="40" border="0"></a></td>
+    <td colspan="2" valign="top"><font size="2"><b><a href="http://www.atmarkit.co.jp/fwcr/rensai2/mobileria01/01.html">業務用途で本当に“使える”モバイル端末はどれだ？</a></b></font><b><br>
+      </b><font size="2"><b>新時代の業務用モバイルRIAを考える（1）　</b>iPhoneやAndroid、ネットブックの登場で盛り上がるモバイル業界。しかし業務での利用には“紛失”や操作性などの問題がある </font>
+      <div align="right"><font color="#666666" size="2">「<a href="http://www.atmarkit.co.jp/fwcr/index.html">リッチクライアント ＆ 帳票</a>」フォーラム 2009/2/26</font></div></td>
+  </tr>
+</tbody></table>
+<table width="390" align="center" border="0" cellpadding="7" cellspacing="0">
+  <tbody><tr>
+    <td valign="top" width="40"><a href="http://www.atmarkit.co.jp/fnetwork/column/narumono29/01.html"><img src="android10_3_files/gra1.jpg" height="60" width="40" border="0"></a></td>
+    <td colspan="2" valign="top"><font size="2"><strong><a href="http://www.atmarkit.co.jp/fnetwork/column/narumono29/01.html">Androidのオープン性でガラパゴスから脱出しよう</a><br>
+      ものになるモノ、ならないモノ（29）</strong>　ガラパゴスとやゆされる日本の高機能ケータイ。閉塞感に満ちた国内市場から世界に出るための解は、Androidのオープン性にある</font>
+        <div align="right">
+          <div align="right"><font color="#666666" size="2">「</font><font size="2"><a href="http://www.atmarkit.co.jp/fnetwork/">Master of IP   Network</a><font color="#666666">」フォーラム 2008/12/1</font></font></div>
+        </div></td>
+  </tr>
+</tbody></table>
+<table width="390" align="center" border="0" cellpadding="7" cellspacing="0">
+  <tbody><tr>
+    <td valign="top" width="40"><a href="http://www.atmarkit.co.jp/fwcr/special/gdd2008/android02.html"><img src="android10_3_files/icon_s.gif" height="60" width="40" border="0"></a></td>
+    <td colspan="2" valign="top"><font size="2"><b><a href="http://www.atmarkit.co.jp/fwcr/special/gdd2008/android02.html">Androidは雇い主の分身として仕事をするエージェント</a></b></font><b><br>
+      </b><font size="2"><b>Google Developer Day 2008特集（1）　</b>Androidの生みの親、アンディ・ルｰビン氏が、Androidに込めた思いと展望を語る。「Google Android入門」の著者の嶋氏が聞く </font>
+      <div align="right"><font color="#666666" size="2">「<a href="http://www.atmarkit.co.jp/fwcr/index.html">リッチクライアント ＆ 帳票</a>」フォーラム 2008/6/13</font></div></td>
+  </tr>
+</tbody></table>
+<table width="390" align="center" border="0" cellpadding="7" cellspacing="0">
+  <tbody><tr>
+    <td height="74" valign="top"><a href="http://www.atmarkit.co.jp/fjava/column/koyama/koyama09_1.html"><img src="android10_3_files/koyama_gra1.jpg" height="60" width="40" border="0"></a></td>
+    <td valign="top"><font size="2"><b><a href="http://www.atmarkit.co.jp/fjava/column/koyama/koyama09_1.html"> Google Android用携帯アプリ作成のための基礎知識</a><br>
+      小山博史のJavaを楽しむ（9）　</b>先日公開されたGoogleの携帯端末プラットフォームAndroid。開発環境の整え方やアプリの作り方、作成に便利なツール、SDKの中身などを解説 </font>
+        <div align="right"><font color="#666666" size="2">「<a href="http://www.atmarkit.co.jp/fjava/index.html">Java
+          Solution</a>」フォーラム 2007/12/3</font></div></td>
+  </tr>
+</tbody></table>
+<table width="414" align="center" border="0" cellpadding="7" cellspacing="0">
+  <tbody><tr>
+    <td height="74" valign="top" width="417"><a href="http://www.atmarkit.co.jp/fjava/column/koyama/koyama09_1.html"></a><a href="http://monoist.atmarkit.co.jp/fembedded/android/"><img src="android10_3_files/title.jpg" height="150" width="400" border="0"></a>
+        <div align="right"><a href="http://monoist.atmarkit.co.jp/index.html"><font size="2">MONOist</font></a> <font size="2">&gt; <a href="http://monoist.atmarkit.co.jp/fembedded/">組み込み開発</a> &gt; <a href="http://monoist.atmarkit.co.jp/fembedded/android/">Android</a></font></div>
+      <strong><font color="#666666" size="2">ケータイ分野以外の組み込みデバイス開発の現場でも注目を集めている「Android」。組み込みデバイスへの適用からアプリケーション開発、イベントレポート、ニュースなどAndroidに関するさまざまな技術情報・最新動向をお届けします！</font></strong></td>
+  </tr>
+</tbody></table>
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td valign="middle" width="39%"><font size="2"><a href="http://www.atmarkit.co.jp/fjava/rensai4/android10/android10_2.html"><img src="android10_3_files/prev.gif" height="17" width="88" border="0"></a></font></td>
+            <td width="16%" align="RIGHT"><div align="center"><b><font size="2"><a href="http://www.atmarkit.co.jp/fjava/rensai4/android10/android10_1.html">1</a>-<a href="http://www.atmarkit.co.jp/fjava/rensai4/android10/android10_2.html">2</a>-3</font></b></div></td>
+            <td width="45%" align="RIGHT"></td>
+          </tr>
+      </tbody></table>
+        <br>
+        <table width="430" align="CENTER" border="3" bordercolor="#107131" cellpadding="0" cellspacing="0">
+          <tbody><tr bordercolor="#107131" bgcolor="#107131">
+            <td><font color="#ffffff" size="2"><b>　Index</b></font></td>
+          </tr>
+          <tr>
+            <td height="164"><table width="430" align="center" border="0" cellpadding="5" cellspacing="0">
+                <tbody><tr bordercolor="#FFFFFF" bgcolor="#006600">
+                  <td colspan="2" bgcolor="#e7f3ff"><b><font color="#0069ad" size="2">第10回　Androidのホーム画面に常駐するアプリを作るには</font></b></td>
+                </tr>
+                <tr bgcolor="#cc9966">
+                  <td valign="TOP" width="12" bgcolor="#e7f3ff"><font color="#000000">&nbsp;</font></td>
+                  <td width="402" bgcolor="#e7f3ff"><font color="#000000" size="2"><b><a href="http://www.atmarkit.co.jp/fjava/rensai4/android10/android10_1.html">Page1</a></b><br>
+                    Androidのホーム画面に常駐する「AppWidget」とは <br>
+                    Androidのウィジェットで、できること／できないこと<br>
+                  Android SDKのコマンドラインツールの使い方</font></td>
+                </tr>
+           <tr bgcolor="#ccccff">
+            <td valign="TOP" width="12" bgcolor="#e7f3ff"><font color="#000000">&nbsp;</font></td>
+            <td width="402" bgcolor="#e7f3ff"><font color="#000000" size="2"><b><a href="http://www.atmarkit.co.jp/fjava/rensai4/android10/android10_2.html">Page2</a></b><br>
+              AppWidgetにもライフサイクルがある<br>
+              コラム　「Android 1.5でonDeleted()メソッドが呼び出されない不具合」<br>
+              Androidウィジェット作成の基礎知識</font></td>
+          </tr>
+<tr bgcolor="#ccccff">
+                  <td valign="TOP" width="12" bgcolor="#e7f3ff"><font color="#000000" size="2"><img src="android10_3_files/thispag2.gif" height="12" width="12"></font></td>
+                  <td width="402" bgcolor="#e7f3ff"><font color="#000000" size="2"><b>Page3</b><br>
+                    AppWidgetを指定した間隔ごとに実行するには<br>
+                    AppWidgetを指定した時間に実行するには<br>
+                    コラム　「タイミングを見計らってIntentを発信するPendingIntentとは」<br>
+                    AppWidgetをクリック時に実行するには<br>
+                  AppWidgetを使う際の2つの注意点</font></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+      </tbody></table>
+        <br>
+        <br>
+        <div class="backnum">
+<h3><a href="http://www.atmarkit.co.jp/fjava/index/index_android.html">Androidで動く携帯Javaアプリ作成入門 バックナンバー</a>
+<span><a href="http://www.atmarkit.co.jp/fjava/index/index_android.html">連載インデックスへ&#187;</a></span></h3>
+<ul>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android01/android01_1.html">第1回 Android Market配布を目指しEclipseでHelloWorld！</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android02/android02_1.html">第2回 Androidアプリ作成の基本“Activity”とは何か？</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android03/android03_1.html">第3回 ブラウザや地図、ストリートビューの基、Intentとは？</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android04/android04_1.html">第4回 簡単でワクワクするAndroidウィジェット10連発！</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android05/android05_1.html">第5回 Androidアプリの使いやすさを左右する5つのレイアウト</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android06/android06_1.html">第6回 AndroidでSQLiteのDB操作をするための基礎知識</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android07/android07_1.html">第7回 常駐アプリが作成できるAndroidの“サービス”とは</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android08/android08_1.html">第8回 アプリを国際化してAndroid Marketから世界へ発信</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android09/android09_1.html">第9回 Netbookにも広まるAndroidで、かつてないWeb体験を</a></li>
+<li><span>第10回 Androidのホーム画面に常駐するアプリを作るには</span></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android11/android11_1.html">第11回 Android 1.6のジェスチャーとテキスト読み上げを使う</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android12/android12_1.html">第12回 SurfaceViewならAndroidで高速描画ゲームが作れる</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android13/android13_1.html">第13回 iPhoneより多彩なAndroidのセンサをアプリで操作</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android14/android14_1.html">第14回 Android 2.1の新機能で作る、美しく燃える“待ち受け”</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android15/android15_1.html">第15回 Android NDKでJNIを使用してアプリを高速化するには</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android16/android16_1.html">第16回 地図/位置情報/GPSを使うAndroidアプリを作るには</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android17/android17_1.html">第17回 もはやケータイに必須のカメラをAndroidで制御しよう</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android18/android18_1.html">第18回 開発者が知っておきたいAndroid 2.2新機能 12連発</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android19/android19_1.html">第19回 XMLレイアウトでAndroidアプリに“設定画面”を追加</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/android20/android20_1.html">第20回 Androidアプリで“アニメーション”するための基礎知識</a></li>
+</ul>
+</div>
+
+<br>
+        <br>
+        <table width="450" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr valign="MIDDLE">
+            <td width="139"><font size="2"><b><a href="http://www.atmarkit.co.jp/fjava/index/index_java.html"><img src="android10_3_files/backn2.gif" height="18" width="137" border="0"></a></b></font></td>
+            <td width="311"><a href="http://www.atmarkit.co.jp/fjava/index/index_java.html"><font size="2"><b>Java 
+              Solution全記事一覧</b></font></a></td>
+          </tr>
+        </tbody></table>
+        <br>
+        <br>
+        <b> <br>
+      </b><font size="2"> </font> <!-- #EndEditable -->
+<!-- MODIPHI_CONTENTS_END -->
+<script charset="utf-8" src="android10_3_files/script_002.js" type="text/javascript"></script><div class="btmlist" id="newzia_connect_atmarkit"><div class="title">推奨記事（β）</div><ul><li><a href="http://www.atmarkit.co.jp/fjava/special/widgetfx01/widgetfx01_1.html" onmousedown="_nc_clicked(this.href)">Java Storeや携帯でも使われる？ WidgetFXとは</a></li><li><a href="http://www.atmarkit.co.jp/fwcr/rensai2/silverlight06/silverlight06_1.html" onmousedown="_nc_clicked(this.href)">デスクトップや.NET技術をSilverlightでカッコよくしよう</a></li><li><a href="http://www.atmarkit.co.jp/fwcr/rensai2/airwidget01/airwidget01_1.html" onmousedown="_nc_clicked(this.href)">いまさら聞けないAdobe AIR「超」入門</a></li><li><a href="http://www.atmarkit.co.jp/fjava/column/koyama/koyama09_1.html" onmousedown="_nc_clicked(this.href)">小山博史のJavaを楽しむ（9）</a></li><li><a href="http://www.atmarkit.co.jp/fjava/column/koyama/koyama08_1.html" onmousedown="_nc_clicked(this.href)">小山博史のJavaを楽しむ（8）</a></li></ul><div align="right">powered by <a href="http://connect.newzia.jp/" target="_blank">newziaコネクト</a></div></div> 
+<div id="frec">
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITF";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_009.js"></script><table width="500" border="0" cellpadding="0" cellspacing="0">    <tbody><tr>      <td align="right"><font color="#636563" size="2"><b>- PR -</b></font>&nbsp;</td>    </tr>  </tbody></table>  <table height="300" width="500" bgcolor="#990000" border="0" cellpadding="1" cellspacing="0">  <tbody>    <tr>      <td height="300" align="right">      <table height="300" width="100%" border="0" cellpadding="10" cellspacing="0">        <tbody><tr valign="top">          <td bgcolor="#ffffff">            <p align="center">            <font style="font-size: 12pt;">            <b><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=74,7c7f5c8e/784200575/ITF/58842/300625855.300625150.54256/300931690/897/784200575:ITF/g/http://www.grapecity.com/0794241826DF.clk" target="_top">「それくらい帳票ツールでやればいいじゃないですか！<br>このあたりの帳票ツールならできると思いますが…」<br></a></b>            </font>            </p><div align="left"><font style="font-size: 10pt;">単
+純なSQL文では抽出できないデータや異なる場所や形式にあるデータなどから帳票システムを開発する場合、帳票の外観デザインよりも、データデザインに工
+数が必要になります。そんな時は、ETLツールを使って適切なデータを適切な形にしてから帳票に渡せばよいのですが、それくらいでは…</font></div>                        <div align="left"><font style="font-size: 10pt;">            <a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=74,7c7f5c8e/784200575/ITF/58842/300625855.300625150.54256/300931690/897/784200575:ITF/g/http://www.grapecity.com/0794241826DF.clk" target="_top">            <img src="android10_3_files/elixirreport_160.gif" height="160" hspace="20" vspace="0" width="160" align="left" border="0"></a>            <b><font color="#cc0000">ETLツールを導入するまでもありません。<br>帳票ツールの機能で提供します。</font></b><br><br></font>            <font style="font-size: 10pt;">「Elixir Report」のETLツール機能<br>◆ビジュアル“データ”デザイン<br>　データソースの、結合、条件分岐、演算<br>　などはGUI画面操作でコーディングレス<br>◆多様なデータ形式をサポート<br>　CSV、Excel、XML、Javaオブジェクトなど<br>　各形式に対応</font></div>            <div align="right"><font style="font-size: 10pt;">            <a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=74,7c7f5c8e/784200575/ITF/58842/300625855.300625150.54256/300931690/897/784200575:ITF/g/http://www.grapecity.com/0794241826DF.clk" target="_top">「コンポジットデータソース」で【できる】</a><br></font></div>          </td>        </tr>      </tbody></table>      </td>    </tr>  </tbody>  </table>  
+
+<noscript>
+ <iframe height=300 width=500 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITF&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+
+</div>
+
+<div class="btmlist"><div class="title">TechTargetジャパン</div></div>
+
+<script charset="utf-8" src="android10_3_files/script_004.js" type="text/javascript"></script><div id="newzia_connect_wp_atit_rc2_"><div id="newzia_connect_wp_atit_rc2" class="btmlist"><h3>ホワイトペーパー<small>（<a href="http://techtarget.itmedia.co.jp/tt/membership/">TechTargetジャパン</a>）</small></h3><ul><li><a onclick="var s=s_gi('itmediacojpglobal'); s.eVar21='tt_atit_rc_java'; s.tl(this,'o','tt_atit_rc_java');" href="http://techtarget.itmedia.co.jp/tt/news/0907/21/news04.html" onmousedown="_nc_wp_atit_rc2_clicked(this.href)">Writer、Documents、Googleドキュメント、無料オフィススイートのワープロ機能</a></li><li><a onclick="var s=s_gi('itmediacojpglobal'); s.eVar21='tt_atit_rc_java'; s.tl(this,'o','tt_atit_rc_java');" href="http://techtarget.itmedia.co.jp/tt/news/0904/14/news02.html" onmousedown="_nc_wp_atit_rc2_clicked(this.href)">現場主導型のアプリ構築を可能にする「ビジネスマッシュアップ」</a></li><li><a onclick="var s=s_gi('itmediacojpglobal'); s.eVar21='tt_atit_rc_java'; s.tl(this,'o','tt_atit_rc_java');" href="http://techtarget.itmedia.co.jp/tt/news/0902/16/news03.html" onmousedown="_nc_wp_atit_rc2_clicked(this.href)">Ruby／Rails用IDE「3rdRail 2.0」は開発を効率化するか？</a></li></ul></div><div style="text-align: right; font-size: 10px; color: rgb(102, 102, 102);">powered by <a href="http://connect.newzia.jp/" target="_blank">newziaコネクト</a></div><br clear="all"></div>
+
+<div class="btmlist">
+<div class="title">Java Solution フォーラム 新着記事</div>
+<ul>
+<li><strong><a href="http://www.atmarkit.co.jp/fjava/rensai4/enterprise_appli02/01.html">JasperReportsとiReportで帳票の常識を理解しよう</a></strong> （2010/12/1）<br>帳票生成ライブラリとデザインツールを紹介し、使い方の解説を通じて帳票の常識・構成・作り方などを説明します</li>
+<li><strong><a href="http://www.atmarkit.co.jp/fjava/rensai4/devtool18/devtool18_1.html">Team Foundation ServerでJava開発は大丈夫か？</a></strong> （2010/11/24）<br>.NET開発用の構成管理ツールと思われがちだが、Eclipseプラグインを使えばJavaやPHPでも使えます。Trac Lightningとの比較も</li>
+<li><strong><a href="http://www.atmarkit.co.jp/fjava/rensai4/enterprise_jboss12/01.html">急速なビジネスの変化に対応できる「BRMS」の常識</a></strong> （2010/11/18）<br>　ビジネスルール・BRMS・SOA・ESBの概要や、企業におけるビジネスルールの扱い方を「Drools」のサンプルで解説します</li>
+<li><strong><a href="http://www.atmarkit.co.jp/fjava/column/andoh/andoh53.html">いま購読するべき15の開発者ブログ</a></strong> （2010/10/22）<br>　技術者の間で再び脚光を浴びるブログ。詳細な技術情報やノウハウ、提供サービスの障害報告や現状など中の人ならでは話題が満載だ</li>
+</ul>
+</div>
+<br>
+<table id="mailmagForm" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr> 
+   <td bgcolor="#006699"><img src="android10_3_files/dotclear.gif" height="1" width="1"></td>
+ </tr>
+ <tr> 
+   <td bgcolor="#eeeeee"> <table border="0" cellpadding="0" cellspacing="4">
+ <tbody><tr> 
+   <td><font size="2"><a href="http://www.atmarkit.co.jp/applymember/club/mail_news.html"><b>＠ITメールマガジン</b></a>　新着情報やスタッフのコラムがメールで届きます（無料）</font></td>
+ </tr>
+ <tr> 
+   <form action="/applymember/regist/terms.php" method="post"></form>
+   <td><font size="2"> 
+   <input name="e_mail" value="メールアドレスを入力してください" size="50" onfocus="if (this.value=='メールアドレスを入力してください') {this.value='';}" type="text">
+   <input value="申し込み" type="submit">
+   </font></td>
+   
+ </tr>
+</tbody></table></td>
+ </tr>
+ <tr> 
+   <td bgcolor="#006699"><img src="android10_3_files/dotclear.gif" height="1" width="1"></td>
+  </tr>
+</tbody></table>
+<br>
+<div style="font-size: 12px; font-weight: bold;" id="btmRss">RSSフィード <a href="http://www.atmarkit.co.jp/rss/rss2dc.xml"><img src="android10_3_files/rssicon.gif" align="absmiddle" border="0"></a></div>
+<br>
+<div class="btmlist">
+<div class="title">＠IT 新着記事</div>
+<ul>
+<li><a href="http://www.atmarkit.co.jp/fwin2k/win2ktips/1358rammap/rammap.html">Rammapツールでメモリの詳細な利用状況を調査する</a></li>
+<li><a href="http://www.atmarkit.co.jp/fdotnet/ef4basic/ef4basic06/ef4basic06_01.html">EF4によるN層アーキテクチャと自己追跡エンティティ</a></li>
+<li><a href="http://el.jibun.atmarkit.co.jp/jibunlove/2010/12/post-55bd.html">「ソースコードの質」と「可読性」について議論しよう</a></li>
+<li><a href="http://www.atmarkit.co.jp/im/fa/special/monthly/1011/01.html">11月：記事ランキングで振り返る2010年</a></li>
+<li><a href="http://jibun.atmarkit.co.jp/lskill01/rensai/hayawaza/30/01.html">立てかけたキーボードの転倒を防止する</a></li>
+<li><a href="http://www.atmarkit.co.jp/im/cits/serial/dilbert/199/01.html">無駄なテストをさせたやつは万死に値する</a></li>
+<li><a href="http://monoist.atmarkit.co.jp/fembedded/articles/kaizen/05/kaizen_05a.html">効果的なレビューとそのフォロー【後編】</a></li>
+<li><a href="http://jibun.atmarkit.co.jp/lskill01/rensai/gold11g/02/01.html">リカバリする可能性を考えて、DBを構成する　</a></li>
+<li><a href="http://jibun.atmarkit.co.jp/lcom01/rensai/el/28/01.html">スキルアップは重要だが、「スキル依存症」にご注意を</a></li>
+<li><a href="http://monoist.atmarkit.co.jp/feledev/news/2010/12/01bluestacks.html">Windows PCでAndroidアプリが動作「BlueStacks」</a></li>
+<li><a href="http://www.atmarkit.co.jp/fjava/rensai4/enterprise_appli02/01.html">JasperReportsとiReportで帳票の常識を理解しよう</a></li>
+<li><a href="http://www.atmarkit.co.jp/im/cits/serial/murphy/32/01.html">なぜIT部門は提案できない／しないのか？</a></li>
+</ul>
+</div>
+
+<div id="btm-ttwpjob">
+<h3>スキルアップ／キャリアアップ<small>（JOB@IT）</small></h3>
+<script type="text/javascript" src="android10_3_files/btmtxt_job.txt"></script><div><a href="http://www.atmarkit.co.jp/job/map/" onclick="var s=s_gi('itmediacojpglobal');s.eVar8='map_tech_footer';s.tl(this,'o','map_tech_footer');">あなたの年収で分かる、ITエンジニアとしての市場価値  『＠IT年収MAP』</a></div><div><a href="https://www.atmarkit.co.jp/job/ja/jauser/" onclick="var s=s_gi('itmediacojpglobal');s.eVar8='ja_tech_footer';s.tl(this,'o','ja_tech_footer');">エンジニア求人に復活の兆し！ 続々と「転職成功」の報告が届いています。</a></div><div><a href="https://www.atmarkit.co.jp/job/ja/package/package.html" onclick="var s=s_gi('itmediacojpglobal');s.eVar8='package_tech_footer';s.tl(this,'o','package_tech_footer');">＜転職のための7つ道具＞ 必要な書類テンプレートが無料ダウンロードできる！ </a></div>
+</div>
+</div>
+<!-- centercol end -->
+<!-- rightcol -->
+<div id="rightcol">
+<div id="rightlogo"><a href="http://www.atmarkit.co.jp/fjava/index.html"><img src="android10_3_files/fjava_logo2.gif" height="21" width="185" border="0"></a></div>
+<script charset="utf-8" src="android10_3_files/script.js" type="text/javascript"></script> 
+<!-- Start newziaSubcol -->
+<script type="text/javascript" src="android10_3_files/0406_newzia_Interop.js"></script>
+<!-- END newziaSubcol -->
+
+
+
+
+<div id="sponsor">
+<h2>スポンサーからのお知らせ</h2>
+<div>
+
+
+<span><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITTI3";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_014.js"></script><!-- st=noad : id=784200575 : pos=ITTI3 -->
+
+
+<noscript>
+ <iframe height=48 width=284 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITTI3&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</span>
+<span><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITTI4";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_002.js"></script><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=80,328d36bc/784200575/ITTI4/58998/300638972.300637829.54394/300931731/851/784200572:ITTI4:*/g/http://www.atmarkit.co.jp/job/comp/115mcea/01.html" target="_self">  <div style="font-weight: bold;">  【Javaエンジニア必見です！！】   </div>  <div style="font-weight: normal;">  スキルに適した案件、能力を生かせる案件多数<br>隣のエンジニアと差をつける秘訣を教えます！  </div>  </a>  
+
+<noscript>
+ <iframe height=48 width=284 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITTI4&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</span>
+<span><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITTI5";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_004.js"></script><!-- st=noad : id=784200575 : pos=ITTI5 -->
+
+
+<noscript>
+ <iframe height=48 width=284 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITTI5&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</span>
+<span><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITTI1";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_011.js"></script><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=80,d2f1b1ce/784200575/ITTI1/58847/300637267.300636187.54261/300929901/848/784200572:ITTI1:*/g/http://clk.atdmt.com/JPM/go/266355694/direct/01/" target="_self">  <div style="font-weight: bold;">  Visual Studio 2010【要チェック】なワケ  </div>  <div style="font-weight: normal;">  RIA 開発機能/クラウド開発機能を標準搭載<br>さらに品質を確保するテスト機能を強化  </div>  </a>  
+
+<noscript>
+ <iframe height=48 width=284 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITTI1&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</span>
+<span><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITTI2";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_012.js"></script><!-- st=noad : id=784200575 : pos=ITTI2 -->
+
+
+<noscript>
+ <iframe height=48 width=284 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITTI2&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</span>
+
+</div>
+</div>
+
+
+<div id="rrec">
+<dl>
+<dt>- PR -</dt>
+<dd><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITR";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_017.js"></script><script language="Javascript" src="android10_3_files/B4874243.js"></script><!-- THIS HTML MADE BY ADX -->
+<a href="http://ad-apac.doubleclick.net/6k%3Bh%3Dv8/3a65/3/0/%2a/c%3B231815326%3B0-0%3B0%3B55831837%3B4307-300/250%3B39058969/39076726/1%3B%3B%7Esscs%3D%3fhttp://ad-apac.doubleclick.net/jump/N2830.279597.BS0001891100000010/B4874243;sz=300x250;ord=1" target="_top"><img src="android10_3_files/B4874243.gif" height="250" width="300" border="0"></a>
+<noscript>
+<A HREF="http://ad-apac.doubleclick.net/6k%3Bh%3Dv8/3a65/3/0/%2a/c%3B231815326%3B0-0%3B0%3B55831837%3B4307-300/250%3B39058969/39076726/1%3B%3B%7Esscs%3D%3fhttp://ad-apac.doubleclick.net/jump/N2830.279597.BS0001891100000010/B4874243;sz=300x250;ord=1" TARGET="_top">
+<IMG SRC="http://ad-apac.doubleclick.net/ad/N2830.279597.BS0001891100000010/B4874243;sz=300x250;ord=1" WIDTH="300" HEIGHT="250" BORDER="0"></A>
+</noscript> <noscript> <A HREF="http://ad-apac.doubleclick.net/jump/N2830.279597.BF0001891100000009/B4874243;sz=300x250;ord=1291398215?"> <IMG SRC="http://ad-apac.doubleclick.net/ad/N2830.279597.BF0001891100000009/B4874243;sz=300x250;ord=1291398215?" BORDER=0 WIDTH=300 HEIGHT=250 ALT=""></A> </noscript>
+
+<noscript>
+ <iframe height=300 width=300 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITR&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</dd>
+</dl>
+</div>
+<!-- AD template start -->
+<style type="text/css"><!--
+#ISALR {
+font-size:12px !important;
+font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3" !important;
+font-size:12px !important;
+width:300px !important;
+line-height:14px !important;
+background:#F3F3F3 !important;
+}
+#ISALR a{ text-decoration: none !important;}
+#ISALR a:link{ text-decoration: none !important;}
+#ISALR a:visited{ text-decoration: none !important;}
+#ISALR a:hover{ text-decoration: underline !important;}
+#ISALR .ISALR_newmark {color:red !important;font-weight:bold !important;}
+#ISALR .ISALR_maintitle {background:url(http://img.itmedia.jp/so/p/image/tieup/ISALR_heading_atit.gif) no-repeat 0px 0px #FFF !important;text-indent:-9999px !important;height:22px !important;margin-bottom:0px !important;}
+#ISALR .ISALR_cont {margin:0px 0px 0px 0px !important;padding:8px 0px 8px 6px !important;border-bottom:0px solid #FFF !important;clear:both !important;height:1% !important;}
+#ISALR .ISALRP_cont {margin:0px 0px 0px 0px !important;padding:8px 0px 8px 6px !important;border-bottom:0px solid #FFF !important;clear:both !important;height:1% !important;}
+#ISALR .ISALR_img {float:left !important;padding-right:6px !important;padding-bottom:0px !important;}
+#ISALR .ISALR_img img {border:0px !important;}
+#ISALR .ISALR_abs {clear:left !important;}
+#ISALR .ISALR_indexLink {text-align:right !important;padding:3px !important;}
+--></style>
+<div id="ISALR"><div class="ISALR_maintitle">＠IT Sepcial</div>
+<div class="ISALR-body" id="ISALR-body">
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="10ISALR";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_016.js"></script>        
+
+<noscript>
+ <iframe height=102 width=300 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=10ISALR&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="10ISALRP";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_013.js"></script>    
+
+<noscript>
+ <iframe height=102 width=300 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=10ISALRP&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+<div class="ISALR_cont"><!-- 1291165200_300931764 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,9dad6ff5/784200575/ISALR/58702/300638149.300637030.54124/300931764/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/hitachi/nasstorage1012/nasstorage1012.html" class="ISALR_img"><img src="android10_3_files/special_hitachi_nas_40x40.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,9dad6ff5/784200575/ISALR/58702/300638149.300637030.54124/300931764/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/hitachi/nasstorage1012/nasstorage1012.html">NASはもう古い。新しいストレージが必要<br>２年をかけて日立が生み出したものとは？ </a><br><span class="ISALR_newmark">New!</span><br clear="all"><span></span></div> </div><div class="ISALR_cont"><!-- 1291129200_300931658 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,5435e7f2/784200575/ISALR/58734/300638563.300637433.54156/300931658/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/vmware/1010virtual/virtual01.html" class="ISALR_img"><img src="android10_3_files/at101109_S_1115.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,5435e7f2/784200575/ISALR/58734/300638563.300637433.54156/300931658/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/vmware/1010virtual/virtual01.html">いま、中堅・中小企業に広がるサーバ仮想化<br>「コストが掛かる」は誤った認識です</a><br><span class="ISALR_newmark"><!-- 1291129200 --></span><br clear="all"><span></span></div> </div><div class="ISALR_cont"><!-- 1291042800_300931483 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,ba0b4070/784200575/ISALR/58683/300638448.300637321.54106/300931483/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/atlink/1011host/01.html" class="ISALR_img"><img src="android10_3_files/at101108_S_1125.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,ba0b4070/784200575/ISALR/58683/300638448.300637321.54106/300931483/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/atlink/1011host/01.html">クラウドから専用サーバへ逆戻り？ 逆転現<br>象の背景には進化した専用サーバがあった！</a><br><span class="ISALR_newmark"><!-- 1291042800 --></span><br clear="all"><span></span></div> </div><div class="ISALR_cont"><!-- 1290992400_300931398 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,80c09f1b/784200575/ISALR/58613/300637946.300636841.54040/300931398/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/ca/arcserve1011/01/01.html" class="ISALR_img"><img src="android10_3_files/icon_s_003.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,80c09f1b/784200575/ISALR/58613/300637946.300636841.54040/300931398/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/ca/arcserve1011/01/01.html">どうする？ 仮想環境のバックアップ<br>具体的な事例で疑問氷解、最適な提案へ</a><br><span class="ISALR_newmark"><!-- 1290992400 --></span><br clear="all"><span></span></div> </div><div class="ISALR_cont"><!-- 1290992400_300931382 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,ce0993aa/784200575/ISALR/58628/300638141.300637022.54055/300931382/101125/784200530:ISALR:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/29/news001.html" class="ISALR_img"><img src="android10_3_files/special_hitachi_kyuden_40x40.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,ce0993aa/784200575/ISALR/58628/300638141.300637022.54055/300931382/101125/784200530:ISALR:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/29/news001.html">震度７でも安定運用可能な西日本有数のＤＣ<br>開設当初から支える運用管理ツールとは？</a><br><span class="ISALR_newmark"><!-- 1290992400 --></span><br clear="all"><span></span></div> </div><div class="ISALR_cont"><!-- 1290560400_300931221 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,e0632a46/784200575/ISALR/58450/300638208.300637089.53895/300931221/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/soliton/smarton1011/smarton1011.html" class="ISALR_img"><img src="android10_3_files/special_soliton_smarton_40x40.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,e0632a46/784200575/ISALR/58450/300638208.300637089.53895/300931221/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/soliton/smarton1011/smarton1011.html">「シンクライアントなら安全」は本当か？<br>必ずしも過信してはいけない理由、それは…</a><br><span class="ISALR_newmark"><!-- 1290560400 --></span><br clear="all"><span></span></div> </div><div class="ISALR_cont"><!-- 1289955600_300930928 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,305f847d/784200575/ISALR/58155/300637373.300636290.53631/300930928/101125/784200530:ISALR:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/17/news001.html" class="ISALR_img"><img src="android10_3_files/et101104_icon_S.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,305f847d/784200575/ISALR/58155/300637373.300636290.53631/300930928/101125/784200530:ISALR:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/17/news001.html">ソーシャルウェアも「クラウド型」へ――<br>企業価値を高めるための“7つのS”とは？</a><br><span class="ISALR_newmark"><!-- 1289955600 --></span><br clear="all"><span></span></div> </div><div class="ISALR_cont"><!-- 1288832400_300930365 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,9173675e/784200575/ISALR/57548/300637377.300636294.53146/300930365/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/ibm/1011dwh/dwh01.html" class="ISALR_img"><img src="android10_3_files/at101101_S_1104.jpg"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,9173675e/784200575/ISALR/57548/300637377.300636294.53146/300930365/101125/784200530:ISALR:*/g/http://www.atmarkit.co.jp/ad/ibm/1011dwh/dwh01.html">設定や性能チューニングは不要で高性能！<br>IBMのDWHアプライアンスの魅力とは？</a><br><span class="ISALR_newmark"><!-- 1288832400 --></span><br clear="all"><span></span></div> </div><div class="ISALRP_cont"><!-- 1291129200_300931780 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,be94bd90/784200575/ISALRP/58706/300639534.300638362.54128/300931780/101126/784200530:ISALRP:*/g/http://www.atmarkit.co.jp/ad/oracle/1009silverreport/silverreport.html" class="ISALR_img"><img src="android10_3_files/special_oracle_silver-challenge_40x40.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,be94bd90/784200575/ISALRP/58706/300639534.300638362.54128/300931780/101126/784200530:ISALRP:*/g/http://www.atmarkit.co.jp/ad/oracle/1009silverreport/silverreport.html">＠IT読者である現役SEがゼロからDBを学び<br>オラクルマスターに挑戦！いよいよスタート </a><br><br clear="all"><span></span></div> </div><div class="ISALRP_cont"><!-- 1291078800_300931482 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,0f6102aa/784200575/ISALRP/58682/300639341.300638177.54105/300931482/101126/784200530:ISALRP:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/30/news006.html" class="ISALR_img"><img src="android10_3_files/4040IBM_1130.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,0f6102aa/784200575/ISALRP/58682/300639341.300638177.54105/300931482/101126/784200530:ISALRP:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/30/news006.html">レコチョクも採用！　高い可用性を実現する<br>IBMの情報管理基盤サービス、その実力とは</a><br><br clear="all"><span></span></div> </div><div class="ISALRP_cont"><!-- 1291042800_300930586 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,78389013/784200575/ISALRP/58686/300637261.300636181.54109/300930586/101126/784200530:ISALRP:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/09/news001.html" class="ISALR_img"><img src="android10_3_files/special_hitachi_syscom_40x40.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,78389013/784200575/ISALRP/58686/300637261.300636181.54109/300930586/101126/784200530:ISALRP:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/09/news001.html">システム稼働状況とジョブ運用を測定・分析<br>シス・コンピューティングのITサービス改革</a><br><br clear="all"><span></span></div> </div><div class="ISALRP_cont"><!-- 1290560400_300931256 --><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,2ebfd2b6/784200575/ISALRP/58436/300639076.300637926.53881/300931256/101126/784200530:ISALRP:*/g/http://www.atmarkit.co.jp/ad/vmware/1010vdi/vdi01.html" class="ISALR_img"><img src="android10_3_files/at101111_S_1124.gif"></a> <div class="ISALR_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,2ebfd2b6/784200575/ISALRP/58436/300639076.300637926.53881/300931256/101126/784200530:ISALRP:*/g/http://www.atmarkit.co.jp/ad/vmware/1010vdi/vdi01.html">デスクトップ仮想化でVMware Viewを採用<br>する意外な価値を、富士通が事例を交え解説</a><br><br clear="all"><span></span></div> </div></div>
+<div class="ISALR_indexLink"><img src="android10_3_files/arrow_white_002.gif" alt="→" hspace="1" align="absmiddle"> <a href="http://www.atmarkit.co.jp/ad/adindex/core/pr_specialarchive.html">＠IT Special ヘ</a></div>
+</div>
+<script type="text/javascript">
+    var addivid = "ISALR";
+    var addividpv = "ISALRP";
+    var adparts = document.getElementById(addivid);
+    var adinhtml = adparts.innerHTML;
+
+    rObj = new RegExp('st=noad.*pos=' + addivid + ' ');
+    rObjP = new RegExp('st=noad.*pos=' + addividpv + ' ');
+    if (adinhtml.match(rObj) && adinhtml.match(rObjP)) {
+        document.getElementById(addivid).style.display="none";
+    } else {
+        var aditems = adArraySort(addivid + "_cont");
+        var aditemspv = adArraySort(addividpv + "_cont");
+        document.getElementById(addivid + "-body").innerHTML += aditems;
+        document.getElementById(addivid + "-body").innerHTML += aditemspv;
+    }
+
+    var adnowtime = adgetUnixTime();
+    adnowtime = adnowtime - ( 86400 * 3 ) ;
+    var admatch_str = "^<!-- ([0-9]+) -->$";
+    var adinhtmlspan = adparts.getElementsByTagName("span");
+
+    for (var adtie=0; adtie < adinhtmlspan.length; adtie++) {
+        var adtext = adinhtmlspan[adtie].innerHTML;
+        var admatch_ret = new RegExp(admatch_str).exec(adtext);
+        if ( admatch_ret && adnowtime <= admatch_ret[1] ){
+            adinhtmlspan[adtie].innerHTML = "New!";
+        }
+    }
+    function adgetUnixTime() {
+        return parseInt((new Date)/1000);
+    }
+    function adArraySort(aditem){
+        var adstrtmp = adparts.getElementsByTagName("div");
+        var adstr = new Array();
+        var adremove = new Array();
+
+        for (var adstart=0; adstart < adstrtmp.length; adstart++) {
+            if(adstrtmp[adstart].className == aditem){
+                adstr.push("<div class=" + aditem + ">" + adstrtmp[adstart].innerHTML + "</div>");
+                adremove.push(adstrtmp[adstart]);
+            }
+        }
+        for(var i = 0; i < adremove.length; i++){
+                adremove[i].parentNode.removeChild(adremove[i]);
+        }
+        adstr.sort().reverse();
+        adstr = adstr.join("");
+        return adstr;
+    }
+</script>
+<!-- AD template end -->
+
+<!-- START 091022 /include/rightmenu/right_menu.html  -->
+<div id="rnews">
+<div class="title"><a href="http://www.atmarkit.co.jp/news/"><img src="android10_3_files/ttl_news.gif" alt="NewsInsight　ヘッドライン" height="27" width="300" border="0"></a></div>
+<ul>
+<li><a href="http://www.atmarkit.co.jp/news/201012/03/hp.html">米HP「ソフトウェアの品質管理が企業の収益を左右する」</a></li>
+<li><a href="http://www.atmarkit.co.jp/news/201012/02/networld.html">中小企業のサーバ仮想化で仮想ストレージを武器に、ネットワールド</a></li>
+<li><a href="http://www.atmarkit.co.jp/news/201012/02/hp02.html">米HP、フォーティファイに聞く「買収の背景」</a></li>
+<li><a href="http://www.atmarkit.co.jp/news/201012/02/hp.html">米HP、ALM 11で開発者、テスターの労力を大幅に削減</a></li>
+<li><a href="http://www.atmarkit.co.jp/news/201012/01/fatwire.html">FatWire、サイトのスナップショットを保存して履歴管理</a></li>
+<li><a href="http://www.atmarkit.co.jp/news/201012/01/sakura.html">専用サーバのスペック増強とプラン改定、さくらインターネット</a></li>
+<li><a href="http://www.atmarkit.co.jp/news/201012/01/hp.html">米HP、「HP Software Universe 2010」で新戦略を発表</a></li>
+</ul>
+<div class="indexlink"><a href="http://www.atmarkit.co.jp/news/keyword-news.html">ニュース一覧へ<img src="android10_3_files/arrow03.gif" alt="→" height="12" width="11" border="0"></a></div>
+</div>
+<div id="rrec2"><dl><dt>- PR -</dt><dd><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="ITR2";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_005.js"></script><!-- st=noad : id=784200575 : pos=ITR2 -->
+
+
+<noscript>
+ <iframe height=300 width=300 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITR2&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</dd></dl></div>
+<script type="text/javascript" src="android10_3_files/subColseminar.txt"></script><div class="seminarBox"><h2>セミナー情報</h2><p><a href="http://www.atmarkit.co.jp/misc/ct.php?id=EV0Z0102"><img src="android10_3_files/atitSEM02_1_1289916407.gif"><small>■東京会場:12/1 ■大阪会場:12/8 [参加無料]</small></a></p></div>
+<div id="kyujin">
+<h2>お勧め求人情報</h2>
+<div>
+
+
+<span><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200530";
+   var locs="ITTO1";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_010.js"></script><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=83,5e280720/784200530/ITTO1/56828/300636858.300635794.52528/300929565/100274/784200530:ITTO1:*/g/https://www.atmarkit.co.jp/job/ja/jauser/" target="_self">  ITエンジニア向け“転職成功への登竜門”<br>「＠ITジョブエージェント」登録受付中！  </a>    
+
+<noscript>
+ <iframe height=32 width=284 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITTO1&id=784200530">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</span>
+<span><!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200530";
+   var locs="ITTO2";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_018.js"></script><!-- st=noad : id=784200530 : pos=ITTO2 -->
+
+
+<noscript>
+ <iframe height=32 width=284 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=ITTO2&id=784200530">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</span>
+
+</div>
+</div>
+
+
+<div style="margin: 10px 0px 5px;">
+<img src="android10_3_files/ttl_careerup_300.gif" alt="キャリアアップ　～JOB＠IT" vspace="5"></div>
+<div class="jobspace">
+<ul>
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr valign="top">
+<td width="44"><a href="https://www.atmarkit.co.jp/job/ja/jauser/p_voice1.php?company_id=li" onclick="vars=s_gi('itmediacojpglobal');s.eVar8='voice_atit_arti';s.tl(this,'o','voice_atit_arti');">
+<img src="android10_3_files/ja20100607_01.jpg" border="0"></a></td>
+<td><a href="https://www.atmarkit.co.jp/job/ja/jauser/p_voice1.php?company_id=li" onclick="vars=s_gi('itmediacojpglobal');s.eVar8='voice_atit_arti';s.tl(this,'o','voice_atit_arti');">
+<b>【転職者からの声】続々と届いています</b><br>
+＠ITジョブエージェントを利用して、<br>
+転職に成功したITエンジニアの体験談</a><br>
+</td>
+</tr>
+</tbody></table>
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr valign="top">
+<td width="42">
+<a href="https://www.atmarkit.co.jp/job/ja/jauser/" onclick="var s=s_gi('itmediacojpglobal');s.eVar8='ja_atit_top';s.tl(this,'o','ja_atit_top');">
+<img src="android10_3_files/ja_tensyoku4040.gif" border="0"></a></td>
+<td><a href="https://www.atmarkit.co.jp/job/ja/jauser/" onclick="var s=s_gi('itmediacojpglobal');s.eVar8='ja_atit_top';s.tl(this,'o','ja_atit_top');">
+<b>エンジニアの求人に復活の兆し！</b><br>
+続々と届く「転職成功」の報告。<br>
+＠ITジョブエージェントが支援します。</a><br></td>
+</tr>
+</tbody></table>
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr valign="top">
+<td width="44"><a href="https://www.atmarkit.co.jp/job/ja/package/package.html" onclick="vars=s_gi('itmediacojpglobal');s.eVar8='package_atit_arti';s.tl(this,'o','package_atit_arti');">
+<img src="android10_3_files/ja20100607_03.jpg" border="0"></a></td>
+<td><a href="https://www.atmarkit.co.jp/job/ja/package/package.html" onclick="vars=s_gi('itmediacojpglobal');s.eVar8='package_atit_arti';s.tl(this,'o','package_atit_arti');">
+<b>差のつく履歴書の書き方、教えます！</b><br>
+エンジニアの転職が有利に運ぶよう最適化<br>
+「履歴書テンプレート集」のダウンロード</a><br>
+</td>
+</tr>
+</tbody></table>
+<br>
+<div align="right"><a href="http://www.atmarkit.co.jp/job/index.html">JOB＠IT ヘ
+  <img src="android10_3_files/arrow_white.gif" border="0"></a></div>
+</ul>
+</div>
+
+<div id="ji-skill">
+<h4><img src="android10_3_files/ttl_skillup_300.gif" alt="スキルアップ　～＠IT自分戦略研究所" height="21" vspace="5" width="300"></h4>
+<ul>
+<li><a href="http://www.atmarkit.co.jp/misc/ct.php?id=TR840400">
+ITトレメ 「ビジネス基礎」シリーズ開始<br>
+「マナー＆コミュニケーション編」「法律・知財・債権管理編」</a></li>
+</ul>
+<h5>*＊先週の人気講座ランキング＊*<br>
+<small>～ Access編 ～</small></h5>
+<ul class="skill-rank">
+<li><strong id="rank1">1位</strong><a href="http://jibun.atmarkit.co.jp/scenter/learning/learning_n_k_Access+%8F%89%8B%89.html">Access 初級</a><br class="clearfix"></li>
+<li><strong id="rank2">2位</strong><a href="http://jibun.atmarkit.co.jp/scenter/learning/learning_n_k_Access+%89%9E%97p.html">Access 応用</a><br class="clearfix"></li>
+<li><strong id="rank3">3位</strong><a href="http://jibun.atmarkit.co.jp/scenter/learning/learning_n_k_Access%252FExcel+VBA%93%FC%96%E5.html">Access/Excel VBA入門</a><br class="clearfix"></li>
+</ul>
+</div>
+
+<script charset="utf-8" src="android10_3_files/script_003.js" type="text/javascript"></script><div id="newzia_connect_wp_atit_rc_"><div id="newzia_connect_wp_atit_rc" class="btmlist"><h3>ホワイトペーパー<small>（<a href="http://techtarget.itmedia.co.jp/tt/membership/">TechTargetジャパン</a>）</small></h3><ul><li><a onclick="var s=s_gi('itmediacojpglobal'); s.eVar21='tt_atit_wp_java'; s.tl(this,'o','tt_atit_wp_java');" href="http://wp.techtarget.itmedia.co.jp/contents/?cid=3240" onmousedown="_nc_wp_atit_rc_clicked(this.href)">System Center Data Protection Manager 2007 SP1を使用したWindows Server 2008のベアメタル回復</a></li><li><a onclick="var s=s_gi('itmediacojpglobal'); s.eVar21='tt_atit_wp_java'; s.tl(this,'o','tt_atit_wp_java');" href="http://wp.techtarget.itmedia.co.jp/contents/?cid=3055" onmousedown="_nc_wp_atit_rc_clicked(this.href)">ASP.NET 4とVisual Studio 2010 Beta 2によるWeb開発の概要</a></li><li><a onclick="var s=s_gi('itmediacojpglobal'); s.eVar21='tt_atit_wp_java'; s.tl(this,'o','tt_atit_wp_java');" href="http://wp.techtarget.itmedia.co.jp/contents/?cid=2559" onmousedown="_nc_wp_atit_rc_clicked(this.href)">Hyper-V ステップ バイ ステップ ガイド: Hyper-V とフェールオーバー クラスタリング</a></li><li><a onclick="var s=s_gi('itmediacojpglobal'); s.eVar21='tt_atit_wp_java'; s.tl(this,'o','tt_atit_wp_java');" href="http://wp.techtarget.itmedia.co.jp/contents/?cid=1089" onmousedown="_nc_wp_atit_rc_clicked(this.href)">JBossで学ぶEJB入門（上）</a></li><li><a onclick="var s=s_gi('itmediacojpglobal'); s.eVar21='tt_atit_wp_java'; s.tl(this,'o','tt_atit_wp_java');" href="http://wp.techtarget.itmedia.co.jp/contents/?cid=84" onmousedown="_nc_wp_atit_rc_clicked(this.href)">CurlのグリッドコンポーネントFastGrid for Curl評価版デモ</a></li></ul></div><div style="text-align: right; font-size: 10px; color: rgb(102, 102, 102);">powered by <a href="http://connect.newzia.jp/" target="_blank">newziaコネクト</a></div><br clear="all"></div>
+<!-- AD template start -->
+<style type="text/css"><!--
+#ISALRU {
+font-size:12px !important;
+font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3" !important;
+width:300px !important;
+line-height:14px !important;
+letter-spacing:1px !important;
+}
+#ISALRU a{ text-decoration: none !important;}
+#ISALRU a:link{ text-decoration: none !important;}
+#ISALRU a:visited{ text-decoration: none !important;}
+#ISALRU a:hover{ text-decoration: underline !important;}
+#ISALRU .ISALRU_newmark {color:red;font-weight:bold;}
+#ISALRU .ISALRU_maintitle {background:url(http://img.itmedia.jp/so/p/image/tieup/ISALRU_heading_atit.gif) no-repeat 0px 0px #FFF;text-indent:-9999px;height:22px;margin-bottom:0px;}
+#ISALRU .ISALRU_title {}
+#ISALRU .ISALRU_cont {margin:0px 0px 0px 0px;padding:8px 0px 8px 22px;border-bottom:0px solid #FFF;clear:both;height:1%;background:url(http://img.itmedia.jp/so/p/image/tieup/ISALRU_icon_atit.gif) no-repeat 0px 10px}
+#ISALRU .ISALRUP_cont {margin:0px 0px 0px 0px;padding:8px 0px 8px 22px;border-bottom:0px solid #FFF;clear:both;height:1%;background:url(http://img.itmedia.jp/so/p/image/tieup/ISALRU_icon_atit.gif) no-repeat 0px 10px}
+#ISALRU .ISALRU_indexLink {text-align:right;padding:3px;}
+--></style>
+<div id="ISALRU"><div class="ISALRU_maintitle">＠IT Sepcial</div>
+<div class="ISALRU-body" id="ISALRU-body">
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="30ISALRU";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_006.js"></script>                
+
+<noscript>
+ <iframe height=61 width=300 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=30ISALRU&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="30ISALRUP";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_003.js"></script>  
+
+<noscript>
+ <iframe height=61 width=300 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=30ISALRUP&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+
+<div class="ISALRU_cont"><!-- 1291215600_300931825 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,48f93453/784200575/ISALRU/58961/300638205.300637086.54366/300931825/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/soliton/counteract1011/counteract1011.html">スマートデバイスの社内接続を見つけ出せ！<br>検疫とIPSのダブル効果で多層防御を実現</a><br><span class="ISALRU_newmark">New!</span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1291165200_300931789 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,820f7215/784200575/ISALRU/58708/300639216.300638053.54130/300931789/101127/784200530:ISALRU:*/g/http://www.itmedia.co.jp/enterprise/articles/1012/01/news001.html">例えば朝のラッシュを避けた働き方も可能に<br>ワークスタイルを変える“新しい技術”とは</a><br><span class="ISALRU_newmark">New!</span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1291165200_300931761 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,924e28a3/784200575/ISALRU/58700/300638150.300637031.54122/300931761/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/hitachi/nasstorage1012/nasstorage1012.html">ファイルストレージを３本目の柱とする日立<br>抜本的に強化した新製品の正体とは？</a><br><span class="ISALRU_newmark">New!</span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1291129200_300931776 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,c1bd2df5/784200575/ISALRU/58704/300639533.300638361.54126/300931776/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/oracle/1009silverreport/silverreport.html">＠IT読者である現役SEがゼロからDBを学び<br>オラクルマスターに挑戦！いよいよスタート</a><br><span class="ISALRU_newmark"><!-- 1291129200 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1291078800_300931478 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,a71b7c0c/784200575/ISALRU/58678/300639340.300638176.54101/300931478/101127/784200530:ISALRU:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/30/news006.html">レコチョクも採用！　高い可用性を実現する<br>IBMの情報管理基盤サービス、その実力とは</a><br><span class="ISALRU_newmark"><!-- 1291078800 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1290992400_300931409 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,382a73d2/784200575/ISALRU/58641/300639255.300638092.54068/300931409/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/dell/1011apc/02/apc02.html">マイクロソフトのイノベーション拠点は<br>サーバルームの課題にどう対応しているか</a><br><span class="ISALRU_newmark"><!-- 1290992400 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1290992400_300931406 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,8c51e228/784200575/ISALRU/58640/300639252.300638089.54067/300931406/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/dell/1011apc/01/apc01.html">新たなコスト削減のキーワードは「省電力」<br>実機で検証する省電力IT実現のポイントは？</a><br><span class="ISALRU_newmark"><!-- 1290992400 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1290992400_300931399 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,2bbe0978/784200575/ISALRU/58634/300637945.300636840.54061/300931399/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/ca/arcserve1011/01/01.html">どうする？ 仮想環境のバックアップ<br>具体的な事例で疑問氷解、最適な提案へ</a><br><span class="ISALRU_newmark"><!-- 1290992400 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1290992400_300931383 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,fd522177/784200575/ISALRU/58629/300638142.300637023.54056/300931383/101127/784200530:ISALRU:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/29/news001.html">震度７でも安定運用可能な西日本有数のＤＣ<br>開設当初から支える運用管理ツールとは？</a><br><span class="ISALRU_newmark"><!-- 1290992400 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1290733200_300931324 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,68a5aa8c/784200575/ISALRU/58542/300639230.300638067.53979/300931324/101127/784200530:ISALRU:*/g/http://mag.executive.itmedia.co.jp/executive/articles/1011/26/news002.html">日本の課題、生産性向上をPDFが強力に推進<br>充実のサポート体制がIT管理者を支援</a><br><span class="ISALRU_newmark"><!-- 1290733200 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1290560400_300931255 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,c8c37b2c/784200575/ISALRU/58437/300639075.300637925.53882/300931255/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/vmware/1010vdi/vdi01.html">デスクトップ仮想化でVMware Viewを採用<br>する意外な価値を、富士通が事例を交え解説</a><br><span class="ISALRU_newmark"><!-- 1290560400 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1290560400_300931229 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,89fd7e2c/784200575/ISALRU/58458/300638876.300637736.53902/300931229/101127/784200530:ISALRU:*/g/http://jibun.atmarkit.co.jp/ad/fyi/92ms/01.html">人材育成、どうすれば？ 研修をコスト<br>ではなく“投資”に変える秘けつ</a><br><span class="ISALRU_newmark"><!-- 1290560400 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1290387600_300931142 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,a9c2ede9/784200575/ISALRU/58309/300637027.300635955.53774/300931142/101127/784200530:ISALRU:*/g/http://jibun.atmarkit.co.jp/ad/fyi/91sas/01.html">【エンジニアの新しいキャリアパス】<br>「IT技術×分析スキル」＝分析エンジニア </a><br><span class="ISALRU_newmark"><!-- 1290387600 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1289782800_300930848 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,818c1ab0/784200575/ISALRU/58004/300638559.300637429.53508/300930848/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/vmware/1010virtual/virtual01.html">いま、中堅・中小企業に広がるサーバ仮想化<br>「コストが掛かる」は誤った認識です</a><br><span class="ISALRU_newmark"><!-- 1289782800 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1289782800_300930782 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,16058380/784200575/ISALRU/57995/300638198.300637079.53499/300930782/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/dell/fusion-io1011/fusion-io1011.html">ストレージが高速化すると、こんなに有利！<br>サーバ集約、省電力、管理簡素化、さらに…</a><br><span class="ISALRU_newmark"><!-- 1289782800 --></span><br clear="all"><span></span></div></div><div class="ISALRU_cont"><!-- 1288832400_300930363 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=85,605bc59c/784200575/ISALRU/57546/300637378.300636295.53144/300930363/101127/784200530:ISALRU:*/g/http://www.atmarkit.co.jp/ad/ibm/1011dwh/dwh01.html">設定や性能チューニングは不要で高性能！<br>IBMのDWHアプライアンスの魅力とは？</a><br><span class="ISALRU_newmark"><!-- 1288832400 --></span><br clear="all"><span></span></div></div><div class="ISALRUP_cont"><!-- 1290438000_300930645 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=87,8134e86b/784200575/ISALRUP/58434/300637262.300636182.53879/300930645/101128/784200530:ISALRUP:*/g/http://www.itmedia.co.jp/enterprise/articles/1011/09/news001.html">運用管理の目的は『サービス』である！<br>シス・コンピューティングのITサービス改革</a><br><br clear="all"><span></span></div></div><div class="ISALRUP_cont"><!-- 1290092400_300931096 --><div class="ISALRU_title"><a href="http://dlv.itmedia.jp/rd/v1/j/on/c/chsm=87,8a3ff465/784200575/ISALRUP/58268/300638893.300637753.53736/300931096/101128/784200530:ISALRUP:*/g/https://itmedia.smartseminar.jp/public/seminar/view/220">尖閣ビデオ事件で機密情報保護が再注目！？<br>情報流出を防ぐ全方位の対策（東京＆大阪）</a><br><br clear="all"><span></span></div></div></div>
+<div class="ISALRU_indexLink"><img src="android10_3_files/arrow_white_002.gif" alt="→" hspace="1" align="absmiddle"> <a href="http://www.atmarkit.co.jp/ad/adindex/core/pr_specialarchive.html">＠IT Special ヘ</a></div>
+</div>
+<script type="text/javascript">
+    var addivid = "ISALRU";
+    var addividpv = "ISALRUP";
+    var adparts = document.getElementById(addivid);
+    var adinhtml = adparts.innerHTML;
+
+    rObj = new RegExp('st=noad.*pos=' + addivid + ' ');
+    rObjP = new RegExp('st=noad.*pos=' + addividpv + ' ');
+    if (adinhtml.match(rObj) && adinhtml.match(rObjP)) {
+        document.getElementById(addivid).style.display="none";
+    } else {
+        var aditems = adArraySort(addivid + "_cont");
+        var aditemspv = adArraySort(addividpv + "_cont");
+        document.getElementById(addivid + "-body").innerHTML += aditems;
+        document.getElementById(addivid + "-body").innerHTML += aditemspv;
+    }
+
+    var adnowtime = adgetUnixTime();
+    adnowtime = adnowtime - ( 86400 * 3 ) ;
+    var admatch_str = "^<!-- ([0-9]+) -->$";
+    var adinhtmlspan = adparts.getElementsByTagName("span");
+
+    for (var adtie=0; adtie < adinhtmlspan.length; adtie++) {
+        var adtext = adinhtmlspan[adtie].innerHTML;
+        var admatch_ret = new RegExp(admatch_str).exec(adtext);
+        if ( admatch_ret && adnowtime <= admatch_ret[1] ){
+            adinhtmlspan[adtie].innerHTML = "New!";
+        }
+    }
+    function adgetUnixTime() {
+        return parseInt((new Date)/1000);
+    }
+    function adArraySort(aditem){
+        var adstrtmp = adparts.getElementsByTagName("div");
+        var adstr = new Array();
+        var adremove = new Array();
+
+        for (var adstart=0; adstart < adstrtmp.length; adstart++) {
+            if(adstrtmp[adstart].className == aditem){
+                adstr.push("<div class=" + aditem + ">" + adstrtmp[adstart].innerHTML + "</div>");
+                adremove.push(adstrtmp[adstart]);
+            }
+        }
+        for(var i = 0; i < adremove.length; i++){
+                adremove[i].parentNode.removeChild(adremove[i]);
+        }
+
+        adstr.sort().reverse();
+        adstr = adstr.join("");
+        return adstr;
+    }
+</script>
+<!-- AD template end -->
+
+<!-- AD template start -->
+<style type="text/css"><!--
+#ISFLR {
+font-size:12px !important;
+font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3" !important;
+width:300px !important;
+line-height:15px !important;
+letter-spacing:1px !important;
+}
+#ISFLR .ISFLR_newmark {color:red !important;font-weight:bold !important;}
+#ISFLR .ISFLR_maintitle {background:url(http://img.itmedia.jp/so/p/image/tieup/ISFLR_heading_atit.gif) no-repeat 0px 0px #FFF !important;text-indent:-9999px !important;height:22px !important;margin-bottom:4px !important;}
+#ISFLR .ISFLR_cont {margin:0px auto !important;padding:2px 0px 8px 0px !important;border-bottom:0px solid #FFF !important;clear:both !important;height:1% !important;text-align:center;}
+#ISFLR .ISFLR_cont img {border:0px !important;}
+#ISFLR .ISFLRP_cont {margin:0px auto !important;padding:2px 0px 8px 0px !important;border-bottom:0px solid #FFF !important;clear:both !important;height:1% !important;text-align:center;}
+#ISFLR .ISFLRP_cont img {border:0px !important;}
+--></style>
+<div style="display: none;" id="ISFLR"><div class="ISFLR_maintitle">ソリューションFLASH</div>
+<div class="ISFLR-body" id="ISFLR-body">
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="10ISFLR";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_007.js"></script><!-- st=noad : id=784200575 : pos=ISFLR -->
+
+
+<noscript>
+ <iframe height=50 width=290 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=10ISFLR&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="10ISFLRP";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1_015.js"></script><!-- st=noad : id=784200575 : pos=ISFLRP -->
+
+
+<noscript>
+ <iframe height=50 width=290 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=10ISFLRP&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+</div>
+</div>
+<script type="text/javascript">
+    var addivid = "ISFLR";
+    var addividpv = "ISFLRP";
+    var adparts = document.getElementById(addivid);
+    var adinhtml = adparts.innerHTML;
+
+    rObj = new RegExp('st=noad.*pos=' + addivid + ' ');
+    rObjP = new RegExp('st=noad.*pos=' + addividpv + ' ');
+    if (adinhtml.match(rObj) && adinhtml.match(rObjP)) {
+        document.getElementById(addivid).style.display="none";
+    } else {
+        var aditems = adArraySort(addivid + "_cont");
+        var aditemspv = adArraySort(addividpv + "_cont");
+        document.getElementById(addivid + "-body").innerHTML += aditems;
+        document.getElementById(addivid + "-body").innerHTML += aditemspv;
+    }
+
+    var adnowtime = adgetUnixTime();
+    adnowtime = adnowtime - ( 86400 * 3 ) ;
+    var admatch_str = "^<!-- ([0-9]+) -->$";
+    var adinhtmlspan = adparts.getElementsByTagName("span");
+
+    for (var adtie=0; adtie < adinhtmlspan.length; adtie++) {
+        var adtext = adinhtmlspan[adtie].innerHTML;
+        var admatch_ret = new RegExp(admatch_str).exec(adtext);
+        if ( admatch_ret && adnowtime <= admatch_ret[1] ){
+            adinhtmlspan[adtie].innerHTML = "New!";
+        }
+    }
+    function adgetUnixTime() {
+        return parseInt((new Date)/1000);
+    }
+    function adArraySort(aditem){
+        var adstrtmp = adparts.getElementsByTagName("div");
+        var adstr = new Array();
+        var adremove = new Array();
+
+        for (var adstart=0; adstart < adstrtmp.length; adstart++) {
+            if(adstrtmp[adstart].className == aditem){
+                adstr.push("<div class=" + aditem + ">" + adstrtmp[adstart].innerHTML + "</div>");
+                adremove.push(adstrtmp[adstart]);
+            }
+        }
+        for(var i = 0; i < adremove.length; i++){
+                adremove[i].parentNode.removeChild(adremove[i]);
+        }
+        adstr.sort().reverse();
+        adstr = adstr.join("");
+        return adstr;
+    }
+</script>
+<!-- AD template end -->
+
+<!-- END /include/rightmenu/right_menu.html -->
+</div>
+<!-- rightcol end -->
+<br style="clear: both;">
+<!-- footer -->
+<div id="footer">
+<div class="footer_padding">
+<div class="footer_logo"><a href="http://www.atmarkit.co.jp/index.html"><img src="android10_3_files/logo_footer.gif" height="40" width="83" border="0"></a></div>
+<div class="footer_txtlink"><a href="http://www.atmarkit.co.jp/index.html">＠ITトップ</a>｜<a href="http://www.atmarkit.co.jp/fjava/index.html?linkid=2">Java
+          Solutionフォーラム トップ</a>｜<a href="http://ap.atmarkit.co.jp/bbs/core/fjava/">会議室</a>｜<a href="http://www.atmarkit.co.jp/aboutus/termofuse/termofuse.html">利用規約</a>｜<a href="http://corp.itmedia.co.jp/corp/privacy.html">プライバシーポリシー</a>｜<a href="http://www.atmarkit.co.jp/info/sitemap/sitemap.html">サイトマップ</a></div>
+<br style="clear: both;">
+<br>
+<div id="copyright" style="font-size: 10px;">Copyright(c)
+2000-2010
+ITmedia Inc.<br>
+著作権はアイティメディア株式会社またはその記事の筆者に属します。（<a href="http://www.atmarkit.co.jp/aboutus/copyright/copyright.html">著作権について</a>）<br>
+当サイトに掲載されている記事や画像などの無断転載を禁止します。<br>
+「＠IT」「＠IT自分戦略研究所」「＠IT情報マネジメント」「JOB＠IT」「＠ITハイブックス」「＠IT MONOist」「ITmedia」「誠」「BARKS」は、アイティメディア株式会社の登録商標です。<br>
+当サイトに関するお問い合わせは「<a href="http://www.atmarkit.co.jp/aboutus/contact_us/contact_us.html" target="_top">＠ITへのお問い合わせ</a>」をご覧ください。<br>
+</div>
+
+<!-- GOOGLE ANALYTICS --><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="android10_3_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7389445-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- /GOOGLE ANALYTICS END -->
+
+</div>
+<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="android10_3_files/s_code.js"></script><img src="android10_3_files/s35849295318865.gif" name="s_i_itmediacojpglobal" alt="" height="1" width="1" border="0">
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.atmarkit.co.jp"
+s.channel="＠IT Java Solution"
+s.pageType=""
+s.hier1="root,atmarkit,atit,java,cont,articles"
+s.hier2="atmarkit,atit,java,cont,articles"
+s.hier3="atit,java,cont,articles"
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2="root,atmarkit,atit,java,cont,articles"
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6="atit"
+s.prop7="atit,java"
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20="＠IT（CORE）";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+<!-- claria tag start -->
+<!-- claria tag end -->
+
+<!-- mitag -->
+
+
+
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200575";
+   var locs="N";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script><script language="JavaScript" type="text/javascript" src="android10_3_files/v1.js"></script><!-- st=noad : id=784200575 : pos=N -->
+
+
+<noscript>
+ <iframe height=1 width=1 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=N&id=784200575">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+
+</div>
+<!-- footer end -->
+</div>
+<!-- main end -->
+</div>
+<!-- wrap end -->
+<!-- #EndTemplate --><script src="android10_3_files/contents_002.asc" type="text/javascript" charset="utf-8"></script><script src="android10_3_files/contents.asc" type="text/javascript" charset="utf-8"></script><script src="android10_3_files/contents_003.asc" type="text/javascript" charset="utf-8"></script></body></html>

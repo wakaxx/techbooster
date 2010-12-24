@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+            
+        <CheckBoxPreference
+                android:key="checkbox_preference"
+                android:title="CheckBoxPreference"
+                android:summary="CheckBoxPreference" />
+                
+        <EditTextPreference
+                android:key="edittext_preference"
+                android:title="EditTextPreference"
+                android:summary="EditTextPreference"
+                android:dialogTitle="EditTextPreference" />
+                
+        <ListPreference
+                android:key="list_preference"
+                android:title="ListPreference"
+                android:summary="ListPreference"
+                android:entries="@array/entries_list_preference"
+                android:entryValues="@array/entryvalues_list_preference"
+                android:dialogTitle="ListPreference" />
+                
+        <PreferenceScreen
+                android:title="Value Check"
+                android:summary="Move to Value Check Screen">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:targetPackage="org.jpn.techbooster.PreferenceSample"
+                    android:targetClass="org.jpn.techbooster.PreferenceSample.ValueCheck" />
+
+        </PreferenceScreen>
+    
+</PreferenceScreen>

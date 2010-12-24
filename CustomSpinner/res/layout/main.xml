@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<Spinner
+    android:id="@+id/Spinner01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+</Spinner>
+
+
+<CheckedTextView  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/CheckedTextView01" 
+    style="@style/custom_icon"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+</CheckedTextView>
+
+
+</LinearLayout>

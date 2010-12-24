@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@android:id/text1" 
+    style="@style/custom_icon"
+    android:layout_height="?android:attr/listPreferredItemHeight" 
+    android:singleLine="true" 
+    android:layout_width="fill_parent"
+	android:textSize="13sp"
+    android:ellipsize="marquee" >
+</CheckedTextView>
