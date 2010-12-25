@@ -1,4 +1,4 @@
-package org.jpn.techbooster.sample;
+package org.jpn.techbooster.sample.packageinfo;
 
 import java.util.Date;
 import org.jpn.techbooster.packageinfosample.R;
@@ -26,11 +26,11 @@ public class PackageInfoSampleActivity extends Activity {
                 e.printStackTrace();
         }
         
-        // 1970”N1Œ1“úŒß‘O0‚©‚ç‚ÌŒo‰ßŠÔ‚©‚çDateƒNƒ‰ƒX‚ğì¬‚·‚é
+        // 1970å¹´1æœˆ1æ—¥åˆå‰0æ™‚ã‹ã‚‰ã®çµŒéæ™‚é–“ã‹ã‚‰Dateã‚¯ãƒ©ã‚¹ã‚’ä½œæˆã™ã‚‹
         Date dateFirstInstallTime = new Date(packageInfo.firstInstallTime);
         Date dateLastUpdateTime = new Date(packageInfo.lastUpdateTime);
         
-        //ì¬‚µ‚½DateƒNƒ‰ƒXiƒCƒ“ƒXƒg[ƒ‹“úAXV“új‚ğ•\¦‚·‚é
+        //ä½œæˆã—ãŸDateã‚¯ãƒ©ã‚¹ï¼ˆï¼ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ—¥æ™‚ã€æ›´æ–°æ—¥æ™‚ï¼‰ã‚’è¡¨ç¤ºã™ã‚‹
         textFirstInstallTime.setText("FirstInstallTime : "+ dateFirstInstallTime);
         textLastUpdateTime.setText("LastUpdateTime : "+ dateLastUpdateTime);
     }
