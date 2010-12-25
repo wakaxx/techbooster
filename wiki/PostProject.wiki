@@ -234,11 +234,11 @@
   * http://techbooster.jpn.org/application/2058/
   * http://techbooster.googlecode.com/svn/trunk/TechGallery
 
-* ブラウザの共有ボタンからサムネイルを取得（作成）する。
+ * ブラウザの共有ボタンからサムネイルを取得（作成）する。
   * http://techbooster.jpn.org/application/2147/
   * http://techbooster.googlecode.com/svn/trunk/NormalActivity
 
-* Applicationクラスを継承して、データの共有をする。
+ * Applicationクラスを継承して、データの共有をする。
   * http://techbooster.jpn.org/application/2353/
   * http://techbooster.googlecode.com/svn/trunk/ApplicationClassTest
 
