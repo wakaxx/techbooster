@@ -1,4 +1,4 @@
-package org.jpn.techbooster.sample;
+package org.jpn.techbooster.sample.customprogressbar;
 
 import org.jpn.techbooster.customprogressbarsample.R;
 
