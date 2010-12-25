@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Serializable</string><string name="Save">保存</string>
+    
+<string name="Load">読み込み</string>
+<string name="Str">文字列</string>
+<string name="Number">数字</string>
+</resources>
