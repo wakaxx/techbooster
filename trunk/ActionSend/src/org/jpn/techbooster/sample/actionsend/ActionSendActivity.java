@@ -1,6 +1,6 @@
 package org.jpn.techbooster.sample.actionsend;
 
-import org.jpn.techbooster.sample.R;
+import org.jpn.techbooster.sample.actionsend.R;
 
 import android.app.Activity;
 import android.content.Intent;
