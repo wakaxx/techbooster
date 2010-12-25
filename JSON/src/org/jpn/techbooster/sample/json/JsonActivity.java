@@ -7,7 +7,7 @@ import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.jpn.techbooster.sample.R;
+import org.jpn.techbooster.sample.json.R;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -15,8 +15,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class JSONSampleActivity extends Activity {
-    /** Called when the activity is first created. */
+public class JsonActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +30,7 @@ public class JSONSampleActivity extends Activity {
         try {
         	httpResponse = httpClient.execute(request);
         } catch (Exception e) {
-        	Log.d("JSONSampleActivity", "Error Execute");
+        	Log.d("JsonActivity", "Error Execute");
         	return;
         }
         
@@ -48,13 +47,13 @@ public class JSONSampleActivity extends Activity {
                 JSONArray eventArray = rootObject.getJSONArray("events");
                 for (int i = 0; i < eventArray.length(); i++) {
                     JSONObject jsonObject = eventArray.getJSONObject(i);
-                    Log.d("JSONSampleActivity", jsonObject.getString("title"));
+                    Log.d("JsonActivity", jsonObject.getString("title"));
                 }
         	} catch (Exception e) {
-            	Log.d("JSONSampleActivity", "Error");
+            	Log.d("JsonActivity", "Error");
 			}
         } else {
-        	Log.d("JSONSampleActivity", "Status" + status);
+        	Log.d("JsonActivity", "Status" + status);
         	return;
         }
         
