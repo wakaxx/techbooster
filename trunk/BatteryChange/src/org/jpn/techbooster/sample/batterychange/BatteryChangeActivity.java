@@ -1,6 +1,6 @@
 package org.jpn.techbooster.sample.batterychange;
 
-import org.jpn.techbooster.sample.R;
+import org.jpn.techbooster.sample.batterychange.R;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
