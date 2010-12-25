@@ -2,6 +2,19 @@
 
 = 記事一覧 =
 
+ * Asynctaskを使って非同期処理を行う
+  * http://techbooster.jpn.org/application/1339/
+  * https://techbooster.googlecode.com/svn/trunk/AsyncTask
+  * https://techbooster.googlecode.com/svn/trunk/AsyncTaskProgressBar
+
+ * Intent.ACTION_SENDで他のアプリケーションと連携する
+  * http://techbooster.jpn.org/application/1388/
+  * https://techbooster.googlecode.com/svn/trunk/ActionSend
+
+ * TelephonyManagerを使って端末の情報を取得する
+  * http://techbooster.jpn.org/device/1528/
+  * https://techbooster.googlecode.com/svn/trunk/TelephonyManager
+
  * 残量などバッテリーの情報を取得する
   * http://techbooster.jpn.org/device/1586/
   * https://techbooster.googlecode.com/svn/trunk/BatteryChange
