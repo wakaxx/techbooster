@@ -1,6 +1,6 @@
 package org.jpn.techbooster.sample.asynctask;
 
-import org.jpn.techbooster.sample.async.R;
+import org.jpn.techbooster.sample.asynctask.R;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
