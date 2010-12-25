@@ -2,9 +2,29 @@
 
 = 記事一覧 =
 
+ * AndroidでGPSセンサを利用する方法
+  * http://techbooster.jpn.org/device/227/
+  * https://techbooster.googlecode.com/svn/trunk/Location
+
+ * AppWidgetの作成(1)
+  * http://techbooster.jpn.org/application/292/
+  * https://techbooster.googlecode.com/svn/trunk/AppWidget1
+
+ * AppWidgetの作成(2) + PendingIntent
+  * http://techbooster.jpn.org/application/382/
+  * https://techbooster.googlecode.com/svn/trunk/AppWidget2
+
+ * データを簡単に保存する方法(Preference編)
+  * http://techbooster.jpn.org/application/468/
+  * https://techbooster.googlecode.com/svn/trunk/Preference
+
+ * テキストの読み上げ(TextToSpeech)を利用する
+  * http://techbooster.jpn.org/application/550/
+  * https://techbooster.googlecode.com/svn/trunk/TextSpeech
+
  * Spinnerクラスを使ってコンボボックスを表示する
   * http://techbooster.jpn.org/ui/606/
-   * https://techbooster.googlecode.com/svn/trunk/Spinner
+  * https://techbooster.googlecode.com/svn/trunk/Spinner
 
  * プログレスバー、プログレスダイアログを使って進捗を表示する
   * http://techbooster.jpn.org/ui/659/
