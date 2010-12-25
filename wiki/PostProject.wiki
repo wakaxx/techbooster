@@ -2,6 +2,19 @@
 
 = 記事一覧 =
 
+ * Spinnerクラスを使ってコンボボックスを表示する
+  * http://techbooster.jpn.org/ui/606/
+   * https://techbooster.googlecode.com/svn/trunk/Spinner
+
+ * プログレスバー、プログレスダイアログを使って進捗を表示する
+  * http://techbooster.jpn.org/ui/659/
+  * https://techbooster.googlecode.com/svn/trunk/ProgressBar
+  * https://techbooster.googlecode.com/svn/trunk/ProgressDialog
+
+ * 画面の向きによってレイアウトを変更する
+  * http://techbooster.jpn.org/ui/721/
+  * https://techbooster.googlecode.com/svn/trunk/ScreenOrientation
+
  * Webブラウザ(WebView)を利用する(1) 
   * http://techbooster.jpn.org/application/773/
   * https://techbooster.googlecode.com/svn/trunk/WebView1
