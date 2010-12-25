@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_list_preference">
+        <item>Donut 1.6</item>
+        <item>Eclair 2.1</item>
+        <item>Froyo 2.2</item>  
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>donut</item>
+        <item>eclair</item>
+        <item>froyo</item>  
+    </string-array>
+</resources>
