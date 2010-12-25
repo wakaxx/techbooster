@@ -2,6 +2,10 @@
 
 = 記事一覧 =
 
+ * リストビューをカスタマイズする
+  * http://techbooster.jpn.org/ui/1282/
+  * https://techbooster.googlecode.com/svn/trunk/CustomListView
+
  * Asynctaskを使って非同期処理を行う
   * http://techbooster.jpn.org/application/1339/
   * https://techbooster.googlecode.com/svn/trunk/AsyncTask
