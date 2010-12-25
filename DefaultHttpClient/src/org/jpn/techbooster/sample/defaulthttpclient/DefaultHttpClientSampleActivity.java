@@ -7,7 +7,7 @@ import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.jpn.techbooster.sample.R;
+import org.jpn.techbooster.sample.defaulthttpclient.R;
 import org.xmlpull.v1.XmlPullParser;
 import android.app.Activity;
 import android.os.Bundle;
