@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<EditText android:id="@+id/EditTextSpeech" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+<Button android:text="Speech" android:id="@+id/ButtonSpeech" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:text="Slow" android:id="@+id/ButtonSlow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+<Button android:text="Normal" android:id="@+id/ButtonNormal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2"></Button>
+<Button android:text="Fast" android:id="@+id/ButtonFast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+</LinearLayout>
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:text="Low" android:id="@+id/ButtonLowPitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+<Button android:text="Normal" android:id="@+id/ButtonNormalPitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2"></Button>
+<Button android:text="High" android:id="@+id/ButtonHighPitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+</LinearLayout>
+</LinearLayout>
