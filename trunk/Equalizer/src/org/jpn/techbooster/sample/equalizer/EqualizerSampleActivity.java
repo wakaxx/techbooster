@@ -1,4 +1,4 @@
-package org.jpn.techbooster.sample;
+package org.jpn.techbooster.sample.equalizer;
 
 import org.jpn.techbooster.soundeeffectsample.R;
 
@@ -8,7 +8,7 @@ import android.media.audiofx.Equalizer;
 import android.os.Bundle;
 import android.util.Log;
 
-public class SoundEffectSampleActivity extends Activity {
+public class EqualizerSampleActivity extends Activity {
 	private MediaPlayer mediaPlayer_;
 	private Equalizer equalizer_;
 	
