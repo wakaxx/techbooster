@@ -2,22 +2,22 @@
 
 = 記事一覧 =
 
-* 残量などバッテリーの情報を取得する
- * http://techbooster.jpn.org/device/1586/
- * https://techbooster.googlecode.com/svn/trunk/BatteryChange
+ * 残量などバッテリーの情報を取得する
+  * http://techbooster.jpn.org/device/1586/
+  * https://techbooster.googlecode.com/svn/trunk/BatteryChange
 
-* XMLをパース（解析）する
- * http://techbooster.jpn.org/application/1643/
- * https://techbooster.googlecode.com/svn/trunk/XmlPullParserString
- * https://techbooster.googlecode.com/svn/trunk/XmlPullParserUrl
+ * XMLをパース（解析）する
+  * http://techbooster.jpn.org/application/1643/
+  * https://techbooster.googlecode.com/svn/trunk/XmlPullParserString
+  * https://techbooster.googlecode.com/svn/trunk/XmlPullParserUrl
 
-* DefaultHttpClientを使ってコンテンツを取得する
- * http://techbooster.jpn.org/application/1801/
- * https://techbooster.googlecode.com/svn/trunk/DefaultHttpClient
+ * DefaultHttpClientを使ってコンテンツを取得する
+  * http://techbooster.jpn.org/application/1801/
+  * https://techbooster.googlecode.com/svn/trunk/DefaultHttpClient
 
-* JSONをパース（解析）する
- * http://techbooster.jpn.org/application/1645/
- * https://techbooster.googlecode.com/svn/trunk/JSON
+ * JSONをパース（解析）する
+  * http://techbooster.jpn.org/application/1645/
+  * https://techbooster.googlecode.com/svn/trunk/JSON
 
  * SoundPoolで効果音を鳴らす
   * http://techbooster.jpn.org/application/1998/
