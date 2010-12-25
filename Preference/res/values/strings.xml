@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Preference</string>
+<string name="button_label">保存</string>
+</resources>
