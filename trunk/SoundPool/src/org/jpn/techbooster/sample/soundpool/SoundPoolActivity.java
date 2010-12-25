@@ -1,6 +1,6 @@
 package org.jpn.techbooster.sample.soundpool;
 
-import org.jpn.techbooster.soundpoolsample.R;
+import org.jpn.techbooster.sample.soundpool.R;
 
 import android.app.Activity;
 import android.media.AudioManager;
@@ -12,7 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class SoundPoolSampleActivity extends Activity {
+public class SoundPoolActivity extends Activity {
     SoundPool soundPool_;
     int soundId_;
     
