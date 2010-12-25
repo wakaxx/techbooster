@@ -1,6 +1,6 @@
 package org.jpn.techbooster.sample.downloadmanager;
 
-import org.jpn.techbooster.downloadmanagersample.R;
+import org.jpn.techbooster.sample.downloadmanager.R;
 
 import android.app.Activity;
 import android.app.DownloadManager;
@@ -19,7 +19,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class DownloadManagerSampleActivity extends Activity implements OnClickListener {	
+public class DownloadManagerActivity extends Activity implements OnClickListener {	
 	private DownloadManager downLoadManager_;
 	private Button buttonDownLoadStart_;
 	private Button buttonCheckStatus_;
