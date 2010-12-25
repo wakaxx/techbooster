@@ -2,9 +2,6 @@ package org.jpn.techbooster.sample.defaulthttpclient;
 
 import java.io.ByteArrayOutputStream;
 import java.io.StringReader;
-import java.net.URL;
-import java.net.URLConnection;
-
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
@@ -12,15 +9,12 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.jpn.techbooster.sample.R;
 import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Xml;
 
 public class DefaultHttpClientSampleActivity extends Activity {
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
