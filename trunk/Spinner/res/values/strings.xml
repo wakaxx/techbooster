@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spinner</string>
+	<string name="ButtonCheckSelected">Check</string>
+	<string-array name="sample_array">
+		<item>Sample0</item>
+		<item>Sample1</item>
+		<item>Sample2</item>
+		<item>Sample3</item>
+		<item>Sample4</item>
+	</string-array>
+</resources>
