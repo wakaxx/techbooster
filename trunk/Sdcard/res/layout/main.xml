@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<Button android:text="Save"
+	android:id="@+id/ButtonSave"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_weight="0">
+</Button>
+<EditText android:text=""
+	android:id="@+id/EditTextInput"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:gravity="top">
+</EditText>
+</LinearLayout>
