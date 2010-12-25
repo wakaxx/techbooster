@@ -1,6 +1,6 @@
 package org.jpn.techbooster.sample.asynctaskprogressbar;
 
-import org.jpn.techbooster.sample.progressasync.R;
+import org.jpn.techbooster.sample.asynctaskprogressbar.R;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
