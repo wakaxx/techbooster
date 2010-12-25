@@ -1,9 +1,9 @@
-package org.jpn.techbooster.sample.xmlpullparseruri;
+package org.jpn.techbooster.sample.xmlpullparserurl;
 
 import java.net.URL;
 import java.net.URLConnection;
 
-import org.jpn.techbooster.sample.R;
+import org.jpn.techbooster.sample.xmlpullparserurl.R;
 import org.xmlpull.v1.XmlPullParser;
 
 import android.app.Activity;
