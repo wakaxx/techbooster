@@ -2,6 +2,14 @@
 
 = 記事一覧 =
 
+ * Secure Viewを用いてタッチイベントをフィルタリングする
+  * http://techbooster.jpn.org/ui/2448/
+  * https://techbooster.googlecode.com/svn/trunk/SecureActivity
+
+ *  定期処理ハンドラを用いて、Viewを再描画する
+  * http://techbooster.jpn.org/application/1691/
+  * https://techbooster.googlecode.com/svn/trunk/TouchEx
+
  * AndroidでGPSセンサを利用する方法
   * http://techbooster.jpn.org/device/227/
   * https://techbooster.googlecode.com/svn/trunk/Location
