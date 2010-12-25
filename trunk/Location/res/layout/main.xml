@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+	android:id="@+id/ProviderLabel"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="NONE"
+    />
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="経度"
+    />
+<TextView  
+	android:id="@+id/LatitudeLabel"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="---"
+    />
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="緯度"
+    />    
+<TextView  
+	android:id="@+id/LongitudeLabel"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="---"
+    />
+</LinearLayout>
