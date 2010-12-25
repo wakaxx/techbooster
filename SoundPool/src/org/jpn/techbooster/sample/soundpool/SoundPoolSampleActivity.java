@@ -1,4 +1,4 @@
-package org.jpn.techbooster.sample;
+package org.jpn.techbooster.sample.soundpool;
 
 import org.jpn.techbooster.soundpoolsample.R;
 
@@ -36,7 +36,7 @@ public class SoundPoolSampleActivity extends Activity {
 	   
        soundPool_ = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
        
-       // 2.2–¢–‚Ìê‡‚ÍsetOnLoadCompleteListener‚ªg‚¦‚È‚¢‚Ì‚ÅƒRƒƒ“ƒgƒAƒEƒg‚·‚é•K—v‚ª‚ ‚è‚Ü‚·
+       // 2.2æœªæº€ã®å ´åˆã¯setOnLoadCompleteListenerãŒä½¿ãˆãªã„ã®ã§ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™
        soundPool_.setOnLoadCompleteListener(new OnLoadCompleteListener() {
     	   @Override
     	   public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
