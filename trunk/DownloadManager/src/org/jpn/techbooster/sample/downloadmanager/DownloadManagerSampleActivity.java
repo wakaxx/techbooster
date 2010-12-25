@@ -1,4 +1,4 @@
-package org.jpn.techbooster.sample;
+package org.jpn.techbooster.sample.downloadmanager;
 
 import org.jpn.techbooster.downloadmanagersample.R;
 
