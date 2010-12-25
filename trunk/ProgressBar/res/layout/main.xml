@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<ProgressBar android:id="@+id/ProgressBarDefault"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	</ProgressBar>
+<ProgressBar android:id="@+id/ProgressBarHorizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	style="?android:attr/progressBarStyleHorizontal">
+	</ProgressBar>
+<ProgressBar android:id="@+id/ProgressBarLarge"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	style="?android:attr/progressBarStyleLarge">
+	</ProgressBar>
+<ProgressBar android:id="@+id/ProgressBarSmall"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	style="?android:attr/progressBarStyleSmall">
+	</ProgressBar>
+<ProgressBar android:id="@+id/ProgressBarHorizontal1"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	style="?android:attr/progressBarStyleHorizontal">
+	</ProgressBar>
+<ViewStub android:id="@+id/ViewStub01" android:layout_width="wrap_content" android:layout_height="wrap_content"></ViewStub><ProgressBar android:id="@+id/ProgressBarHorizontal2"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	style="?android:attr/progressBarStyleHorizontal">
+	</ProgressBar>
+
+</LinearLayout>
