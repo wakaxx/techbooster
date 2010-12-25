@@ -2,7 +2,7 @@ package org.jpn.techbooster.sample.xmlpullparserstring;
 
 import java.io.StringReader;
 
-import org.jpn.techbooster.sample.R;
+import org.jpn.techbooster.sample.xmlpullparserstring.R;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
