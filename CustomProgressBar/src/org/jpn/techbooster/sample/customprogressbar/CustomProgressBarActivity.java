@@ -1,12 +1,12 @@
 package org.jpn.techbooster.sample.customprogressbar;
 
-import org.jpn.techbooster.customprogressbarsample.R;
+import org.jpn.techbooster.sample.customprogressbar.R;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 
-public class CustomProgressBarSampleActivity extends Activity {
+public class CustomProgressBarActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
