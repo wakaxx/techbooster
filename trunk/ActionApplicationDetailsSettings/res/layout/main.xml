@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<Button android:text="ACTION_APPLICATION_DETAILS_SETTINGS"
+		android:id="@+id/ButtonDetailsSettings"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		</Button>
+<Button android:text="ACTION_MANAGE_ALL_APPLICATIONS_SETTINGS"
+		android:id="@+id/ButtonAllApplicationsSettings"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		</Button>
+</LinearLayout>
