@@ -2,6 +2,10 @@
 
 = 記事一覧 =
 
+ * アプリケーションのディテール画面、アプリケーション一覧画面を開く
+  * http://techbooster.jpn.org/application/2558/
+  * http://code.google.com/p/techbooster/source/browse/trunk/ActionApplicationDetailsSettings
+
  * 音楽ファイルを検索する
   * http://techbooster.jpn.org/application/2509/ 
   * https://techbooster.googlecode.com/svn/trunk/SearchSoundFile
