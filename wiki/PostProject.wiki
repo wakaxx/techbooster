@@ -361,7 +361,9 @@
   * http://techbooster.jpn.org/application/2353/
   * http://techbooster.googlecode.com/svn/trunk/ApplicationClassTest
 
-
+ *InputConnection-Interfaceを使って、選択されたテキストを取得-変更する
+  *http://techbooster.jpn.org/ui/2613/
+  *http://techbooster.googlecode.com/svn/trunk/SoftKeyboard_Tech
 
 
 = Details =
