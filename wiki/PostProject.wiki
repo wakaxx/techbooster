@@ -2,7 +2,7 @@
 
 = 記事一覧 =
 
- * アプリケーションのディテール画面、アプリケーション一覧画面を開く
+ * AudioTrackを使ってWAVEデータを再生する
   * http://techbooster.jpn.org/multimedia/2592/
   * http://code.google.com/p/techbooster/source/browse/trunk/audioTrack
 
