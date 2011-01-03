@@ -6,7 +6,7 @@ import android.util.Log;
 import android.widget.ListView;
 
 public class OverScrollListView extends ListView {
-	private final String TAG ="ListView";
+	private final String TAG = "ListView";
 
 	public OverScrollListView(Context context) {
 		super(context);
@@ -30,11 +30,9 @@ public class OverScrollListView extends ListView {
 			int scrollY, int scrollRangeX, int scrollRangeY,
 			int maxOverScrollX, int maxOverScrollY, boolean isTouchEvent) {
 
-
-		//オーバーライド
-		return super.overScrollBy(deltaX, deltaY, scrollX, scrollY,
-				scrollRangeX, scrollRangeY, maxOverScrollX, 200,
-				isTouchEvent);
+		// オーバーライド
+		return super.overScrollBy(0, deltaY, 0, scrollY, 0, scrollRangeY, 0,
+				200, isTouchEvent);
 
 	}
 
@@ -43,8 +41,8 @@ public class OverScrollListView extends ListView {
 	protected void onOverScrolled(int scrollX, int scrollY, boolean clampedX,
 			boolean clampedY) {
 
-		Log.v(TAG, "scrollX:" + scrollX + " scrollY:" + scrollY
-				+ " clampedX:" + clampedX + " clampedY:" + clampedX);
+		Log.v(TAG, "scrollX:" + scrollX + " scrollY:" + scrollY + " clampedX:"
+				+ clampedX + " clampedY:" + clampedX);
 
 		super.onOverScrolled(scrollX, scrollY, clampedX, clampedY);
 
