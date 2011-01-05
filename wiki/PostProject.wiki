@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * 音声認識を利用する
+  * http://techbooster.jpn.org/application/2643/
+  * http://techbooster.googlecode.com/svn/trunk/RecognizerIntent/
+
  * !ListViewで!OverScrollする
   * http://techbooster.jpn.org/ui/2658/
   * http://techbooster.googlecode.com/svn/trunk/overscrolledActivity/
