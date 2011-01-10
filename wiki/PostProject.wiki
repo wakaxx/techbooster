@@ -1,6 +1,11 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+
+ * !ActivityGroupをつかって複数Activityを表示する
+  * http://techbooster.jpn.org/application/2757/
+  * http://techbooster.googlecode.com/svn/trunk/ActivityGroupActivity/
+
  * 音声認識を利用する
   * http://techbooster.jpn.org/application/2643/
   * http://techbooster.googlecode.com/svn/trunk/RecognizerIntent/
