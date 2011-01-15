@@ -2,6 +2,10 @@
 
 = 記事一覧 =
 
+ * Google Mapを表示する
+  * http://techbooster.jpn.org/unclassified/2695/
+  * http://techbooster.googlecode.com/svn/trunk/org.jpn.techbooster.sample.maps/
+
  * !ActivityGroupをつかって複数Activityを表示する
   * http://techbooster.jpn.org/application/2757/
   * http://techbooster.googlecode.com/svn/trunk/ActivityGroupActivity/
