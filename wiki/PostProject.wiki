@@ -23,11 +23,11 @@
 
  * AudioTrackを使ってWAVEデータを再生する
   * http://techbooster.jpn.org/multimedia/2592/
-  * http://code.google.com/p/techbooster/source/browse/trunk/audioTrack
+  * http://techbooster.googlecode.com/svn/trunk/audioTrack/
 
  * アプリケーションのディテール画面、アプリケーション一覧画面を開く
   * http://techbooster.jpn.org/application/2558/
-  * http://code.google.com/p/techbooster/source/browse/trunk/ActionApplicationDetailsSettings
+  * http://techbooster.googlecode.com/svn/trunk/ActionApplicationDetailsSettings/
 
  * 音楽ファイルを検索する
   * http://techbooster.jpn.org/application/2509/ 
