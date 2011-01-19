@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<RadioGroup android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:id="@+id/RadioGroup">
+	<RadioButton android:text="1番目"
+		android:id="@+id/RadioButton01"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		</RadioButton>
+	<RadioButton android:text="2番目"
+		android:id="@+id/RadioButton02"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		</RadioButton>
+	<RadioButton android:text="3番目"
+		android:id="@+id/RadioButton03"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		</RadioButton>
+	<RadioButton android:text="4番目"
+		android:id="@+id/RadioButton04"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		</RadioButton>
+	</RadioGroup>
+<Button android:text="Check"
+	android:id="@+id/ButtonCheck"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	</Button>
+<Button android:text="Clear"
+	android:id="@+id/ButtonClear"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	</Button>
+</LinearLayout>
