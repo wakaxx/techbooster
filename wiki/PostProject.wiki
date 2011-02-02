@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * ExifInterfaceを使ってJPEGファイルのExif情報を取得する
+  * http://techbooster.jpn.org/multimedia/3098/
+  * http://techbooster.googlecode.com/svn/trunk/ExifInterface/
+
  * AnimationListenerを使ってアニメーションのイベントを拾う
   * http://techbooster.jpn.org/ui/3025/
   * http://techbooster.googlecode.com/svn/trunk/AnimationListener/
