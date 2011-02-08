@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * MediaMetadataRetrieverを使ってメディアファイルのメタ情報を取得する
+  * http://techbooster.jpn.org/multimedia/3125/
+  * http://techbooster.googlecode.com/svn/trunk/MediaMetadataRetriever/
+
  * ExifInterfaceを使ってJPEGファイルのExif情報を取得する
   * http://techbooster.jpn.org/multimedia/3098/
   * http://techbooster.googlecode.com/svn/trunk/ExifInterface/
