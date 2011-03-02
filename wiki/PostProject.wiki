@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * DatePickerを使ってカレンダーから日付を選択する
+  * http://techbooster.jpn.org/ui/3501/
+  * http://techbooster.googlecode.com/svn/trunk/CalendarDatePicker/
+
  * FaceDetectorを使って顔認識を行う
   * http://techbooster.jpn.org/multimedia/3263/
   * http://techbooster.googlecode.com/svn/trunk/FaceDetector/
