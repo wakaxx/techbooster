@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * BitmapRegionDecoderクラスで画像を切り出す
+  * http://techbooster.jpn.org/multimedia/3877/
+  * http://techbooster.googlecode.com/svn/trunk/BitmapRegionDecoder/
+
  * DatePickerを使ってカレンダーから日付を選択する
   * http://techbooster.jpn.org/ui/3501/
   * http://techbooster.googlecode.com/svn/trunk/CalendarDatePicker/
