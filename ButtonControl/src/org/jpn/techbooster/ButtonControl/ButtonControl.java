@@ -22,8 +22,8 @@ public class ButtonControl extends Activity {
 		// キーコード表示
 		tv01.setText("KeyCode:" + e.getKeyCode());
 
-		// 戻るボタンが押されたとき
-		if (e.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+		// 検索ボタンが押されたとき
+		if (e.getKeyCode() == KeyEvent.KEYCODE_SEARCH) {
 			// ボタンが押し込まれたとき
 			if (e.getAction() == KeyEvent.ACTION_DOWN) {
 				tv01.setBackgroundColor(Color.RED);
