@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ImageView android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/imageView1" 
+	android:src="@drawable/orizeicon"></ImageView>    
+<TextView  
+		android:id="@+id/title"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="自己紹介"
+	    />
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TableRow>
+		<TextView  
+			android:id="@+id/name"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="名前："
+		    />
+		<TextView  
+			android:id="@+id/name_link"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    />
+	</TableRow>
+	<TableRow>
+		<TextView  
+			android:id="@+id/blog"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="ブログ："
+		    />
+	<TextView  
+		android:id="@+id/blog_link"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+
+	    />
+	</TableRow>
+	<TableRow>
+	<TextView  
+		android:id="@+id/address"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="メールアドレス："
+	    />
+	<TextView  
+		android:id="@+id/address_link"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:autoLink="email"
+	    />
+	</TableRow>
+</TableLayout>
+</LinearLayout>
