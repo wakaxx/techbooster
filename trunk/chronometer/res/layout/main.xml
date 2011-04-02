@@ -3,15 +3,15 @@
 	android:orientation="vertical" android:layout_width="fill_parent"
 	android:layout_height="fill_parent">
 
-	<Chronometer
-		android:id="@+id/chronometer"
-		android:format="chronometer:%s"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
+	<Chronometer android:id="@+id/chronometer" android:format="chronometer:%s"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
 
 
-<Button android:text="Start" android:id="@+id/Start" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-<Button android:id="@+id/Stop" android:text="Stop" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-<Button android:id="@+id/Clear" android:text="Clear" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	<Button android:text="Start" android:id="@+id/Start"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	<Button android:id="@+id/Stop" android:text="Stop"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	<Button android:id="@+id/Clear" android:text="Clear"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
 
 </LinearLayout>
