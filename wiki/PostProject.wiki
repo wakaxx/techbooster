@@ -1,6 +1,11 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * WiFiとBuletoothを簡単に有効にする
+  * http://techbooster.jpn.org/device/4360/
+  * http://techbooster.googlecode.com/svn/trunk/toggleDevice/
+
+
  * TextViewにWebサイトへのリンクを作成する
   * http://techbooster.jpn.org/ui/4177/
   * http://techbooster.googlecode.com/svn/trunk/org.japan.techbooster.sample.textlink/
