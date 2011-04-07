@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * ScaleGestureDetectorを使ってピンチイン、ピンチアウトを認識する
+  *  http://techbooster.jpn.org/ui/4377/
+  * http://techbooster.googlecode.com/svn/trunk/ScaleGestureDetector/
+
  * WiFiとBuletoothを簡単に有効にする
   * http://techbooster.jpn.org/device/4360/
   * http://techbooster.googlecode.com/svn/trunk/toggleDevice/
