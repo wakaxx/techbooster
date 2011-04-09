@@ -23,20 +23,20 @@ public class ringerMode extends Activity {
 		// AudioManager取得
 		am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-		// RingerMode表示用TextView
+		// マナーモード表示用TextView
 		tv_ringerMode = (TextView) findViewById(R.id.ringerMode);
 
-		// 現在のRingerModeを表示
+		// 現在のマナーモードを表示
 		showRingerMode();
 		
 		// ノーマルモード設定用ボタン
 		btn_normalMode = (Button) findViewById(R.id.normalMode);
 		btn_normalMode.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				// setRingerModeメソッドでRingerModeをノーマルモードに設定
+				// setRingerModeメソッドでノーマルモードに設定
 				am.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 
-				// 現在のRingerModeを表示
+				// 現在のマナーモードを表示
 				showRingerMode();
 			}
 		});
@@ -45,10 +45,10 @@ public class ringerMode extends Activity {
 		btn_silentMode = (Button) findViewById(R.id.silentMode);
 		btn_silentMode.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				// setRingerModeメソッドでRingerModeをサイレントモードに設定
+				// setRingerModeメソッドでサイレントモードに設定
 				am.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 
-				// 現在のRingerModeを表示
+				// 現在のマナーモードを表示
 				showRingerMode();
 			}
 		});
@@ -57,10 +57,10 @@ public class ringerMode extends Activity {
 		btn_vibrateMode = (Button) findViewById(R.id.vibrateMode);
 		btn_vibrateMode.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				// setRingerModeメソッドでRingerModeをバイブレートモードに設定
+				// setRingerModeメソッドでバイブレートモードに設定
 				am.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
 
-				// 現在のRingerModeを表示
+				// 現在のマナーモードを表示
 				showRingerMode();
 			}
 		});
@@ -68,7 +68,7 @@ public class ringerMode extends Activity {
 	
 	// RingerMode表示メソッド
 	void showRingerMode() {
-		// getRingerModeメソッドで現在のRingerModeを取得
+		// getRingerModeメソッドで現在のマナーモードを取得
 		switch (am.getRingerMode()) {
 			// ノーマルモードの場合
 			case AudioManager.RINGER_MODE_NORMAL:
