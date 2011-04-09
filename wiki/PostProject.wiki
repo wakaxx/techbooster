@@ -429,6 +429,10 @@
   * http://techbooster.jpn.org/ui/2613/
   * http://techbooster.googlecode.com/svn/trunk/SoftKeyboard_Tech
 
+ * InputConnection-Interfaceを使って、選択されたテキストを取得-変更する
+  * http://techbooster.jpn.org/ui/4429/
+  * http://techbooster.googlecode.com/svn/trunk/WakeLockSample/
+
 
 = Details =
 
