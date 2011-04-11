@@ -62,6 +62,34 @@
   * http://techbooster.jpn.org/ui/2658/
   * http://techbooster.googlecode.com/svn/trunk/overscrolledActivity/
 
+ * マナーモードを設定する
+  * http://techbooster.jpn.org/application/4444/
+  * http://techbooster.googlecode.com/svn/trunk/ringerMode/
+
+ * MediaRecorderで録画する
+  * http://techbooster.jpn.org/multimedia/4265/
+  * http://techbooster.googlecode.com/svn/trunk/recMovie/
+
+ * ハードウェアキーの長押しを検知する
+  * http://techbooster.jpn.org/device/4053/
+  * http://techbooster.googlecode.com/svn/trunk/keyLongPress/
+
+ * タッチパネルのダブルタップや長押しを検出する
+  * http://techbooster.jpn.org/device/3936/
+  * http://techbooster.googlecode.com/svn/trunk/longTap/
+
+ * Chronometerクラスを使って簡単にタイマー処理を行う
+  * http://techbooster.jpn.org/application/3230/
+  * http://techbooster.googlecode.com/svn/trunk/chronometer/
+
+ * GridViewを使って画像ファイルをグリッド表示する
+  * http://techbooster.jpn.org/ui/2867/
+  * http://techbooster.googlecode.com/svn/trunk/gridView/
+
+ * UiModeManagerを利用してUIモードを変更する
+  * http://techbooster.jpn.org/ui/2717/
+  * http://techbooster.googlecode.com/svn/trunk/uiModeManager/
+
  * AudioTrackを使ってWAVEデータを再生する
   * http://techbooster.jpn.org/multimedia/2592/
   * http://techbooster.googlecode.com/svn/trunk/audioTrack/
