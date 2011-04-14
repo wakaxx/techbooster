@@ -1,8 +1,12 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * タイムラプス撮影を行う
+  * http://techbooster.jpn.org/multimedia/4644/
+  * http://techbooster.googlecode.com/svn/trunk/TimeLapse/
+
  * ScaleGestureDetectorを使ってピンチイン、ピンチアウトを認識する
-  *  http://techbooster.jpn.org/ui/4377/
+  * http://techbooster.jpn.org/ui/4377/
   * http://techbooster.googlecode.com/svn/trunk/ScaleGestureDetector/
 
  * WiFiとBuletoothを簡単に有効にする
