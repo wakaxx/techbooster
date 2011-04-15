@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="pref_title">
+		<CheckBoxPreference
+			android:key="checkbox_key"
+			android:title="checkbox_title"
+			android:summary="checkbox_summary"/>
+		<EditTextPreference
+			android:key="edittext_key"
+			android:title="editText_Title"
+			android:summary="editText_summary"
+			android:dialogTitle="editdialog_title" />
+		<ListPreference android:key="polling_time_list_key"
+			android:layout="?android:attr/preferenceLayoutChild"
+			android:title="polling_time_list" android:defaultValue="5"
+			android:dialogTitle="polling_time_dialog" android:entries="@array/list_polling"
+			android:entryValues="@array/list_polling_values" />
+	</PreferenceCategory>
+</PreferenceScreen>
+	 
