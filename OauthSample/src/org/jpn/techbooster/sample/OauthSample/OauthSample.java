@@ -37,7 +37,7 @@ public class OauthSample extends Activity {
     	//Oauth認証オブジェクト作成
 		OAuthAuthorization oauth = new OAuthAuthorization(conf);
 		//Oauth認証オブジェクトにconsumerKeyとconsumerSecretを設定
-		oauth.setOAuthConsumer("iy2FEHXmSXNReJ6nYQ8FRg", "KYro4jM8BHlLSMsSdTylnTcm3pYaTCiG2UZrYK1yI4");
+		oauth.setOAuthConsumer("", "");
 		//アプリの認証オブジェクト作成
 		RequestToken _req = null;
 		try {
