@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="横位置"></TextView>
+    <SeekBar android:id="@+id/seekBar1" android:layout_height="wrap_content" android:layout_width="match_parent"></SeekBar>
+    <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="縦位置"></TextView>
+    <SeekBar android:id="@+id/seekBar2" android:layout_height="wrap_content" android:layout_width="match_parent"></SeekBar>
+    <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="横幅"></TextView>
+    <SeekBar android:id="@+id/seekBar3" android:layout_height="wrap_content" android:layout_width="match_parent"></SeekBar>
+    <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="縦幅"></TextView>
+    <SeekBar android:id="@+id/seekBar4" android:layout_height="wrap_content" android:layout_width="match_parent"></SeekBar>
+    <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X軸回転"></TextView>
+    <SeekBar android:id="@+id/seekBar5" android:layout_height="wrap_content" android:layout_width="match_parent"></SeekBar>
+    <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Y軸回転"></TextView>
+    <SeekBar android:id="@+id/seekBar6" android:layout_height="wrap_content" android:layout_width="match_parent"></SeekBar>
+    <TextView android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中心点回転"></TextView>
+    <SeekBar android:id="@+id/seekBar7" android:layout_height="wrap_content" android:layout_width="match_parent"></SeekBar>
+    <ImageView android:id="@+id/imageView1" android:src="@drawable/image10" android:layout_height="171px" android:layout_width="228px"></ImageView>
+</LinearLayout>
