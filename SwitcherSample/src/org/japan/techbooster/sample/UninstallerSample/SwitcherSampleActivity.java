@@ -46,7 +46,7 @@ public class SwitcherSampleActivity extends Activity {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_MAIN);
         //呼び出したいActivityのカテゴリを指定する
-        intent.addCategory(Intent.CATEGORY_HOME);]
+        intent.addCategory(Intent.CATEGORY_HOME);
         //カテゴリとアクションに一致するアクティビティの情報を取得する
         final List<ResolveInfo> appInfoList = pm.queryIntentActivities(intent, 0);
         
