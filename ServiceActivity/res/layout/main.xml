@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello"
+    />
+<Button android:text="Start Service" android:id="@+id/StartButton" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+<Button android:text="Stop Service" android:id="@+id/StopButton" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+<Button android:text="Bind Service" android:id="@+id/BindButton" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+<Button android:text="Unbind Service" android:id="@+id/UnbindButton" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+</LinearLayout>
