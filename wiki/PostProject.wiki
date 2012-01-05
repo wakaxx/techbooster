@@ -317,6 +317,10 @@
   * http://techbooster.jpn.org/ui/2107/
   * https://techbooster.googlecode.com/svn/trunk/CustomProgressBar
 
+ * ToggleButtonでON/OFFを表現する
+  * http://techbooster.org/android/ui/2913/
+  * http://techbooster.googlecode.com/svn/trunk/ToggleButtonActivity/
+
  * DownloadManagerを使ってファイルをダウンロードする
   * http://techbooster.jpn.org/application/2199/ 
   * https://techbooster.googlecode.com/svn/trunk/DownloadManager
