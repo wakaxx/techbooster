@@ -1,6 +1,62 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * ThreadとHandlerでマルチスレッド処理化する
+  * http://techbooster.org/android/application/6191/
+  * http://techbooster.googlecode.com/svn/trunk/ThreadActivity/
+
+ * Canvasの状態を保存/復帰させる
+  * http://techbooster.org/android/multimedia/5369/
+  * http://techbooster.googlecode.com/svn/trunk/CanvasSaveRestore/
+
+ * タイトルバーをカスタマイズ(+非表示に)する
+  * http://techbooster.org/android/ui/5303/
+  * http://techbooster.googlecode.com/svn/trunk/CustomTitleBar/
+  
+ * 初回起動時に1度だけダイアログを出す方法
+  * http://techbooster.org/android/hacks/5084/
+  * http://techbooster.googlecode.com/svn/trunk/OneTimeMessage/
+ 
+ * ハードウェアキーを取得する
+  * http://techbooster.org/android/ui/5056/
+  * http://techbooster.googlecode.com/svn/trunk/HardwareKey/
+
+ * チュートリアル:9patchで画像を作る
+  * http://techbooster.org/android/environment/3996/
+  * http://techbooster.googlecode.com/svn/trunk/show9patch/
+
+ * ContentProviderからデータを取得する
+  * http://techbooster.org/android/application/4116/
+  * http://techbooster.googlecode.com/svn/trunk/ContentResolverActivity/
+
+ * EditTextの入力制限を行う
+  * http://techbooster.org/android/application/3706/
+  * http://techbooster.googlecode.com/svn/trunk/EditText/
+
+ * onSaveInstanceStateでインスタンスを保存する
+  * http://techbooster.org/android/application/3706/
+  * http://techbooster.googlecode.com/svn/trunk/onSaveInstanceStateActivity/
+
+ * ActionBarにMenuを表示する
+  * http://techbooster.org/android/ui/3383/
+  * http://techbooster.googlecode.com/svn/trunk/ActionBarActivity/
+
+ * Serviceを使う(1) LocalServiceによる常駐型アプリ
+  * http://techbooster.org/android/application/3270/
+  * http://techbooster.googlecode.com/svn/trunk/ServiceActivity/
+  
+ * ステータス通知(Notification)を変化させる
+  * http://techbooster.org/android/ui/3208/
+  * http://techbooster.googlecode.com/svn/trunk/NotificationActivity/
+  
+ * AutoCompleteを使う
+  * http://techbooster.org/android/ui/3083/
+  * http://techbooster.googlecode.com/svn/trunk/AutoCompleteActivity/
+
+ * Viewをカスタマイズ(独自実装)する
+  * http://techbooster.org/android/application/3013/
+  * http://techbooster.googlecode.com/svn/trunk/CustomViewActivity/
+
  * 画面回転時にonDestroyしない方法
   * http://techbooster.jpn.org/hacks/4916
   * http://techbooster.googlecode.com/svn/trunk/myRotate/
