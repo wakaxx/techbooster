@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, onSaveInstanceStateActivity!</string>
+    <string name="app_name">onSaveInstanceStateActivity</string>
+    <string name="input">input text</string>
+</resources>
