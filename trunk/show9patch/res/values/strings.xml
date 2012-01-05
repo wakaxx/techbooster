@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Show9patchActivity!</string>
+    <string name="app_name">show9patch</string>
+    <string name="hello2">Hello\nWorld,\nShow\n9patch\nActivity!</string>
+</resources>
