@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="標準的なシークバー"
+    />
+<TextView android:id="@+id/TextView00"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="設定値表示"
+    />
+<SeekBar android:layout_height="wrap_content" android:id="@+id/SeekBar00"
+	android:layout_width="match_parent"
+	android:progress="25"
+	android:max="100">
+</SeekBar>
+
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="セカンダリプログレスを持ったシークバー"
+    />
+<TextView android:id="@+id/TextView01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="設定値表示"
+    />
+<SeekBar android:layout_height="wrap_content" android:id="@+id/SeekBar01"
+	android:layout_width="match_parent"
+	android:progress="50"
+	android:secondaryProgress="75"
+	android:max="100">
+</SeekBar>
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="背景をカスタマイズしたシークバー"
+    />
+<SeekBar android:layout_height="wrap_content" android:id="@+id/SeekBar02"
+	android:layout_width="match_parent"
+	android:progressDrawable="@drawable/seekbar_img"
+	android:progress="75"
+	android:max="100">
+</SeekBar>
+
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="レイアウトをカスタマイズしたシークバー"
+    />
+<SeekBar android:layout_height="wrap_content" android:id="@+id/SeekBar03"
+	android:layout_width="match_parent"
+	android:progress="50"
+	android:secondaryProgress="75"
+	android:max="100"
+	android:progressDrawable="@drawable/myseekbar">
+</SeekBar>
+
+</LinearLayout>
