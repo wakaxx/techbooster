@@ -1,6 +1,26 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = 記事一覧 =
+ * Bluetooth Health Deviceと通信する
+  * http://techbooster.org/android/device/10660/
+  * http://techbooster.googlecode.com/svn/trunk/BluetoothHealthDevices/
+  
+ * システムテーマで統一感を出す
+  * http://techbooster.org/android/ui/10253/
+  * http://techbooster.googlecode.com/svn/trunk/SystemThemes/
+  
+ * Android 4.0でアクセシビリティを向上させる
+  * http://techbooster.org/android/ui/10250/
+  * http://techbooster.googlecode.com/svn/trunk/Accessibility/
+
+ * スワイプ動作でページ送りする(ViewPager)
+  * http://techbooster.org/android/ui/9079/
+  * http://techbooster.googlecode.com/svn/trunk/ViewPagerActivity/
+
+ * シークバーの使い方 / Getting Started
+  * http://techbooster.org/android/ui/8329/
+  * http://techbooster.googlecode.com/svn/trunk/SeekBar/
+
  * コンテキストメニューを作る
   * http://techbooster.org/android/ui/7490/
   * http://techbooster.googlecode.com/svn/trunk/ContextMenuActivity/
