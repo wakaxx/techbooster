@@ -1,6 +1,6 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
-= 記事一覧 =
+= Android記事一覧 =
  * Bluetooth Health Deviceと通信する
   * http://techbooster.org/android/device/10660/
   * http://techbooster.googlecode.com/svn/trunk/BluetoothHealthDevices/
