@@ -553,9 +553,7 @@
   * http://techbooster.jpn.org/ui/4429/
   * http://techbooster.googlecode.com/svn/trunk/WakeLockSample/
 
-* XMLを生成する
- * http://techbooster.org/android/application/7671/
- * http://techbooster.googlecode.com/svn/trunk/createXML/
+
 
 
 = Details =
