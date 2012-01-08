@@ -1,6 +1,0 @@
-#summary TechBooster記事とコメント、リポジトリ情報
-
-= Web technology記事一覧 =
- * GAE
-  * GAE
-  * GAE
