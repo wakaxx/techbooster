@@ -1,6 +1,6 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Web technology記事一覧 =
- * GAE
-  * GAE
+ * GAE:HTTPリクエスト(GET/POST)を処理する
+  * http://techbooster.org/gae/9264/
   * GAE
