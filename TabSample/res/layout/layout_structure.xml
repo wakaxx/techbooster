@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- ルートでなければならない -->
+    <LinearLayout>
+    	<TabWidget>
+    		<!-- タブ表示部 -->
+    		<Framelayout>
+    			<LinearLayout>
+    			    <!-- 一つ目タブ内での表示内容 -->
+    			</LinearLayout>
+    			<LinearLayout>
+    			    <!-- 二つ目タブ内での表示内容 -->
+    			</LinearLayout>
+
+    		</Framelayout>
+    	</TabWidget>
+    </LinearLayout>
+</TabHost>
