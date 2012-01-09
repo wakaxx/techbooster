@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:txt="http://schemas.android.com/apk/res/net.sample.techbooster.customviewsample"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<net.sample.techbooster.customviewsample.CustomButton  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+	txt:text="SubActivityに遷移"
+	txt:color="#f00"
+	txt:size="20dp"
+	txt:activity="net.sample.techbooster.customviewsample.SubActivity"
+    />
+</LinearLayout>
