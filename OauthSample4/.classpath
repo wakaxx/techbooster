@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="C:/eclipse/libs/twitter4j-android-2.2.5/lib/twitter4j-core-android-2.2.5.jar" sourcepath="/Users/kikata/Dropbox/Documents/lib/twitter4j-android-2.2.1/twitter4j-core/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/kikata/Dropbox/Documents/lib/twitter4j-android-2.2.1/twitter4j-core/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
