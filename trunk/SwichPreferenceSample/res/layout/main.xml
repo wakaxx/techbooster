@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SwitchPreference
+        android:key="checkbox_preference"
+        android:summary="Summary"
+        android:switchTextOff="NO"
+        android:switchTextOn="YES"
+        android:title="RootのSwitchPreference" />
+
+    <PreferenceCategory android:title="サブカテゴリー" >
+
+        <SwitchPreference
+            android:key="checkbox_preference"
+            android:summary="Summary"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="CategoryのなかのSwitchPreference" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
