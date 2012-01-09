@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_search"
+          android:icon="@android:drawable/ic_menu_search"
+          android:title="search"
+          android:showAsAction="always"
+          android:actionViewClass="android.widget.SearchView" />
+          <!-- android.widget.SearchViewを呼び出している -->
+    <item android:id="@+id/action_add"
+          android:icon="@android:drawable/ic_menu_add"
+          android:title="add" />
+    <item android:id="@+id/action_edit"
+          android:icon="@android:drawable/ic_menu_edit"
+          android:showAsAction="always"
+          android:title="edit" />
+    <item android:id="@+id/action_share"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share1"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share2"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share3"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share4"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share5"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share6"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share7"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_share8"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="share"
+          android:showAsAction="always" />
+
+
+
+
+
+
+</menu>
