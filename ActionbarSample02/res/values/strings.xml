@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ActionbarSample02Activity!</string>
+    <string name="app_name">ActionbarSample02</string>
+    
+    <string name="action_bar_share_with">共有</string>
+</resources>
