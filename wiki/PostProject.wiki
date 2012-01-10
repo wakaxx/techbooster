@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * XMLを生成する
+  * http://techbooster.org/android/application/7671/
+  * http://techbooster.googlecode.com/svn/trunk/createXML/
+
  * Bluetooth Health Deviceと通信する
   * http://techbooster.org/android/device/10660/
   * http://techbooster.googlecode.com/svn/trunk/BluetoothHealthDevices/
@@ -552,7 +556,6 @@
  * WakeLockを取得し、Sleep状態からWake状態へ遷移する
   * http://techbooster.jpn.org/ui/4429/
   * http://techbooster.googlecode.com/svn/trunk/WakeLockSample/
-
 
 
 
