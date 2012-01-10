@@ -601,7 +601,129 @@
   * http://techbooster.jpn.org/ui/4429/
   * http://techbooster.googlecode.com/svn/trunk/WakeLockSample/
 
+ * ContentProviderを使用してVoiceMailを保存する
+  * http://techbooster.org/android/application/10751/
+  * http://techbooster.googlecode.com/svn/trunk/VoiceMailSample/
 
+ * Activityのライフサイクルを別クラスに通知する
+  * http://techbooster.org/android/application/10377/
+  * http://techbooster.googlecode.com/svn/trunk/ActivityLifecycleCallbacksSample/
+
+ * メニューのレイアウトを動的に変更する
+  * http://techbooster.org/android/application/10283/
+  * http://techbooster.googlecode.com/svn/trunk/ActionbarSample02/
+
+ * ActionProviderを使用してMenuItemの処理を共通化する
+  * http://techbooster.org/android/application/10018/
+  * http://techbooster.googlecode.com/svn/trunk/SampleActionProvider/
+
+ * ActionBarに共有履歴を追加する
+  * http://techbooster.org/android/application/9912/
+  * http://techbooster.googlecode.com/svn/trunk/ActionbarSample02/
+
+ * ServerSocketを使用してクライアントからデータを受信する
+  * http://techbooster.org/android/application/9539/
+  * http://techbooster.googlecode.com/svn/trunk/SocketServerSample/
+
+ * 独自リスナーを作成する
+  * http://techbooster.org/android/application/9054/
+  * http://techbooster.googlecode.com/svn/trunk/SelfListenerSample/
+
+ * HttpURLConnectionを使用してHTTP通信を行う
+  * http://techbooster.org/android/application/6812/
+  * http://techbooster.googlecode.com/svn/trunk/HTTPSample/
+
+ * AES暗号アルゴリズムを使用してデータを暗号化する
+  * http://techbooster.org/android/application/6629/
+  * http://techbooster.googlecode.com/svn/trunk/PasswordProtectionSample/
+
+ * ActionBarのタブを使用する
+  * http://techbooster.org/android/application/6382/
+  * http://techbooster.googlecode.com/svn/trunk/ActionBarTabSample/
+
+ * TwitterでOAuth認証を行う(2：Twitterの認証ページをブラウザで開く)
+  * http://techbooster.org/android/5040/
+  * http://techbooster.googlecode.com/svn/trunk/OauthSample/
+
+ * TwitterでOAuth認証を行う(3：Access Tokenを取得する)
+  * http://techbooster.org/android/mashup/5301/
+  * http://techbooster.googlecode.com/svn/trunk/OauthSample2/
+
+ * Twitterの"つぶやき"を実装する
+  * http://techbooster.org/android/5669/
+  * http://techbooster.googlecode.com/svn/trunk/OauthSample3/
+
+ * Twitter4jでTimeLineを取得する
+  * http://techbooster.org/android/5907/
+  * http://techbooster.googlecode.com/svn/trunk/OauthSample4/
+
+ * Twitter4jを使用してアカウントのアクションを行う
+  * http://techbooster.org/android/6181/
+  * http://techbooster.googlecode.com/svn/trunk/OauthSample5/
+
+ * ClipboardManagerでUriをコピーする
+  * http://techbooster.org/android/application/4351/
+  * http://techbooster.googlecode.com/svn/trunk/CopyUriSample/
+
+ * ClipboardManagerでIntentをコピーする
+  * http://techbooster.org/android/application/4097/
+  * http://techbooster.googlecode.com/svn/trunk/CopyIntentSample/
+
+ * ClipboardManagerを使用してテキストのコピーと貼り付けを行う(Android3.0版)
+  * http://techbooster.org/android/application/4097/
+  * http://techbooster.org/android/application/3839/
+
+ * ClipboardManagerを使用してテキストのコピーと貼り付けを行う
+  * http://techbooster.org/android/application/3633/
+  * http://techbooster.googlecode.com/svn/trunk/ClipboardManagerSample/
+
+ * NumberPickerを使用して数値を入力する
+  * http://techbooster.org/android/ui/3488/
+  * http://techbooster.googlecode.com/svn/trunk/NumberPickerSample/
+
+ * カメラの画像プレビューからのIntentから画像を取得する
+  * http://techbooster.org/android/application/3357/
+  * http://techbooster.googlecode.com/svn/trunk/GetImageFromCameraSample/
+
+* カメラの画像プレビューからのIntentから画像を取得する
+  * http://techbooster.org/android/application/3357/
+  * http://techbooster.googlecode.com/svn/trunk/GetImageFromCameraSample/
+
+ * SearchViewを使用してListViewのアイテムにフィルターをかける
+  * http://techbooster.org/android/application/3357/
+  * http://techbooster.googlecode.com/svn/trunk/SearchViewSample/
+
+* WebViewでJavaScriptからJavaメソッドを使用する
+  * http://techbooster.org/android/application/3189/
+  * http://techbooster.googlecode.com/svn/trunk/UseJavascriptSample/
+
+* Viewの位置やサイズを動的に変更する
+  * http://techbooster.org/android/application/3072/
+  * http://techbooster.googlecode.com/svn/trunk/ViewAttributeChangeSample/
+
+* BufferedWriterクラスを使用してサーバーにメッセージを送信する
+  * http://techbooster.org/android/application/2999/
+  * http://techbooster.googlecode.com/svn/trunk/SocketWriteSample/
+
+* Socketクラスを使用してソケット通信をする
+  * http://techbooster.org/android/application/9539/
+  * http://techbooster.googlecode.com/svn/trunk/SocketSample/
+
+* WEBサイトのリンクからアプリケーションを起動する
+  * http://techbooster.org/android/application/2748/
+  * http://techbooster.googlecode.com/svn/trunk/UrlAccessSample/
+
+* 位置情報サービスの要求条件を指定して位置情報の更新を通知する
+  * http://techbooster.org/android/application/2525/
+  * http://techbooster.googlecode.com/svn/trunk/LocationManagerSample/
+
+* 位置情報サービスの要求条件を指定して位置情報の更新を通知する(2)
+  * http://techbooster.org/android/application/2636/
+  * http://techbooster.googlecode.com/svn/trunk/LocationListenerSample/
+
+ * AlarmClockクラスを使用してアラームをセットする
+  * http://techbooster.org/android/application/2271/
+  * http://techbooster.googlecode.com/svn/trunk/AlarmProviderSample/
 
 = Details =
 
