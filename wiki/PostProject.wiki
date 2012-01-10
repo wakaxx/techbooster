@@ -685,39 +685,35 @@
   * http://techbooster.org/android/application/3357/
   * http://techbooster.googlecode.com/svn/trunk/GetImageFromCameraSample/
 
-* カメラの画像プレビューからのIntentから画像を取得する
-  * http://techbooster.org/android/application/3357/
-  * http://techbooster.googlecode.com/svn/trunk/GetImageFromCameraSample/
-
  * SearchViewを使用してListViewのアイテムにフィルターをかける
   * http://techbooster.org/android/application/3357/
   * http://techbooster.googlecode.com/svn/trunk/SearchViewSample/
 
-* WebViewでJavaScriptからJavaメソッドを使用する
+ * WebViewでJavaScriptからJavaメソッドを使用する
   * http://techbooster.org/android/application/3189/
   * http://techbooster.googlecode.com/svn/trunk/UseJavascriptSample/
 
-* Viewの位置やサイズを動的に変更する
+ * Viewの位置やサイズを動的に変更する
   * http://techbooster.org/android/application/3072/
   * http://techbooster.googlecode.com/svn/trunk/ViewAttributeChangeSample/
 
-* BufferedWriterクラスを使用してサーバーにメッセージを送信する
+ * BufferedWriterクラスを使用してサーバーにメッセージを送信する
   * http://techbooster.org/android/application/2999/
   * http://techbooster.googlecode.com/svn/trunk/SocketWriteSample/
 
-* Socketクラスを使用してソケット通信をする
+ * Socketクラスを使用してソケット通信をする
   * http://techbooster.org/android/application/9539/
   * http://techbooster.googlecode.com/svn/trunk/SocketSample/
 
-* WEBサイトのリンクからアプリケーションを起動する
+ * WEBサイトのリンクからアプリケーションを起動する
   * http://techbooster.org/android/application/2748/
   * http://techbooster.googlecode.com/svn/trunk/UrlAccessSample/
 
-* 位置情報サービスの要求条件を指定して位置情報の更新を通知する
+ * 位置情報サービスの要求条件を指定して位置情報の更新を通知する
   * http://techbooster.org/android/application/2525/
   * http://techbooster.googlecode.com/svn/trunk/LocationManagerSample/
 
-* 位置情報サービスの要求条件を指定して位置情報の更新を通知する(2)
+ * 位置情報サービスの要求条件を指定して位置情報の更新を通知する(2)
   * http://techbooster.org/android/application/2636/
   * http://techbooster.googlecode.com/svn/trunk/LocationListenerSample/
 
