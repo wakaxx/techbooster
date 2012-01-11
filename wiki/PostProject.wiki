@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Activityにアニメーションを付与する(TranslateAnimation)
+  * http://techbooster.org/android/ui/3128/
+  * http://techbooster.googlecode.com/svn/trunk/ActivityanimSample
+
  * Drag and Dropを用いてViewをドラッグする
   * http://techbooster.org/android/application/3317/
   * http://techbooster.googlecode.com/svn/trunk/dragdrop/
