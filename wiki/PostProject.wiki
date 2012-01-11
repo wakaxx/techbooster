@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * タブを用いた画面を作成する / Getting Started
+  * http://techbooster.org/android/ui/9629/
+  * http://techbooster.googlecode.com/svn/trunk/TabSample
+
  * Toastを表示してユーザーに通知する/Getting Startted
   * http://techbooster.org/android/ui/9278/
   * http://techbooster.googlecode.com/svn/trunk/ToastSample
