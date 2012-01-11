@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * ViewFlipperを利用して、Viewを切り替える/Getting Started
+  * http://techbooster.org/event/12398/
+  * http://techbooster.googlecode.com/svn/trunk/ViewFlipperActivityGS/
+
  * カメラ機能を無効にする
   * http://techbooster.org/android/device/10563/
   * http://techbooster.googlecode.com/svn/trunk/DisableCamera/
