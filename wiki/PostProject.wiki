@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * インストール済みホームアプリケーションの一覧を作成する
+  * http://techbooster.org/android/application/6776/
+  * http://techbooster.googlecode.com/svn/trunk/SwitcherSample/
+
  * ListViewの選択モードを切り替える
   * http://techbooster.org/android/application/6550/
   * http://techbooster.googlecode.com/svn/trunk/MultiSelectList/
