@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Toastを表示してユーザーに通知する/Getting Startted
+  * http://techbooster.org/android/ui/9278/
+  * http://techbooster.googlecode.com/svn/trunk/ToastSample
+
  * ダイアログを表示する / Getting Started
   * http://techbooster.org/android/ui/8492/
   * http://techbooster.googlecode.com/svn/trunk/alertdialog
