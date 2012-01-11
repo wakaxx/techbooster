@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Google Mapを表示する
+  * http://techbooster.org/android/application/2695/
+  * http://techbooster.googlecode.com/svn/trunk/org.jpn.techbooster.sample.maps
+
  * Secure Viewを用いてタッチイベントをフィルタリングする
   * http://techbooster.org/android/ui/2448/
   * http://techbooster.googlecode.com/svn/trunk/SecureActivity/
