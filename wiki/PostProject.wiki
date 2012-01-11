@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * 複数選択可能なリストを作成する
+  * http://techbooster.org/android/ui/3503/
+  * http://techbooster.googlecode.com/svn/trunk/MultiSelectList/
+
  * Activityにアニメーションを付与する(TranslateAnimation)
   * http://techbooster.org/android/ui/3128/
   * http://techbooster.googlecode.com/svn/trunk/ActivityanimSample
