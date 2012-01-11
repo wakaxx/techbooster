@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Bluetoothで通信を行う(1)
+  * http://techbooster.org/android/application/5191/
+  * http://techbooster.googlecode.com/svn/trunk/BluetoothSample/
+
  * Activityを透過する
   * http://techbooster.org/android/ui/4715/
   * http://techbooster.googlecode.com/svn/trunk/TranslucentActivity/
