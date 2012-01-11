@@ -1,6 +1,9 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * スタイラスによる入力イベントを取得する
+  * http://techbooster.org/android/ui/9757/
+
  * トグルスイッチを利用して設定を変更する
   * http://techbooster.org/android/ui/9757/
   * http://techbooster.googlecode.com/svn/trunk/SwitchSample
