@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Activityを透過する
+  * http://techbooster.org/android/ui/4715/
+  * http://techbooster.googlecode.com/svn/trunk/TranslucentActivity/
+
  * TextViewにWebサイトへのリンクを作成する
   * http://techbooster.org/android/ui/4177/
   * http://techbooster.googlecode.com/svn/trunk/textlink/
