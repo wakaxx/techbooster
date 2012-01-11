@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Drag and Dropを用いてViewをドラッグする
+  * http://techbooster.org/android/application/3317/
+  * http://techbooster.googlecode.com/svn/trunk/dragdrop/
+
  * NativeActivityクラスを用いたアプリケーションを実行する。
   * http://techbooster.org/android/application/2239/
  
