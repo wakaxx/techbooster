@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Intentでオブジェクトを渡す
+  * http://techbooster.org/android/application/7190/
+  * http://techbooster.googlecode.com/svn/trunk/ObjectIntentSample/
+
  * Google Analyticsを用いてアプリの使用状況を調査する
   * http://techbooster.org/android/6932/
   * http://techbooster.googlecode.com/svn/trunk/AnalyticsSample/
