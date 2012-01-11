@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * カメラ機能を無効にする
+  * http://techbooster.org/android/device/10563/
+  * http://techbooster.googlecode.com/svn/trunk/DisableCamera/
+
  * ナビゲーションバーおよびシステムバーの表示状態を切り替える
   * http://techbooster.org/android/ui/10173/
 
