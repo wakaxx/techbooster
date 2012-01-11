@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * TextViewにWebサイトへのリンクを作成する
+  * http://techbooster.org/android/ui/4177/
+  * http://techbooster.googlecode.com/svn/trunk/textlink/
+
  * 複数選択可能なリストを作成する
   * http://techbooster.org/android/ui/3503/
   * http://techbooster.googlecode.com/svn/trunk/MultiSelectList/
