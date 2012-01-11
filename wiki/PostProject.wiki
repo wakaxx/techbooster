@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Bluetoothで通信を行う(3)
+  * http://techbooster.org/android/device/5833/
+  * http://techbooster.googlecode.com/svn/trunk/BluetoothSample02/
+
  * Bluetoothで通信を行う(2)
   * http://techbooster.org/android/device/5535/
   * http://techbooster.googlecode.com/svn/trunk/BluetoothSample01/
