@@ -4,7 +4,7 @@
  * NativeActivityクラスを用いたアプリケーションを実行する。
   * http://techbooster.org/android/application/2239/
  
- *Google Maps API Keyを取得する
+ * Google Maps API Keyを取得する
   * http://techbooster.org/android/device/1915/
 
  * TimePickerDialogで時刻を入力する/Getting Started
