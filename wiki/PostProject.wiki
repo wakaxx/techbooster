@@ -1,6 +1,9 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * Google App Engine (for Java) の開発環境構築
+  * http://techbooster.org/gae/8149/
+
  * layoutoptを用いて、レイアウトを最適化する
   * http://techbooster.org/android/application/8016/
   * http://techbooster.googlecode.com/svn/trunk/LayoutoptSample/
