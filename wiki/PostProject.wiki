@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+xmlファイルを用いてカスタムViewを作る
+http://techbooster.org/android/application/7361/
+http://techbooster.googlecode.com/svn/trunk/CustomViewSample/
+
  * Intentでオブジェクトを渡す
   * http://techbooster.org/android/application/7190/
   * http://techbooster.googlecode.com/svn/trunk/ObjectIntentSample/
