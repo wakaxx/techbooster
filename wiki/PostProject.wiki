@@ -1,6 +1,9 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * ナビゲーションバーおよびシステムバーの表示状態を切り替える
+  * http://techbooster.org/android/ui/10173/
+
  * スタイラスによる入力イベントを取得する
   * http://techbooster.org/android/ui/9757/
 
