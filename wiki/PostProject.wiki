@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * トグルスイッチを利用して設定を変更する
+  * http://techbooster.org/android/ui/9757/
+  * http://techbooster.googlecode.com/svn/trunk/SwitchSample
+
  * タブを用いた画面を作成する / Getting Started
   * http://techbooster.org/android/ui/9629/
   * http://techbooster.googlecode.com/svn/trunk/TabSample
