@@ -1,0 +1,13 @@
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\Bin\Debug\ApplicationIcon.png
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\Bin\Debug\Background.png
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\Bin\Debug\ListBoxSample.dll
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\Bin\Debug\ListBoxSample.pdb
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\Bin\Debug\AppManifest.xaml
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\Bin\Debug\ListBoxSample.xap
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\obj\Debug\ResolveAssemblyReference.cache
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\obj\Debug\App.g.i.cs
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\obj\Debug\MainPage.g.i.cs
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\obj\Debug\ListBoxSample.g.resources
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\obj\Debug\ListBoxSample.dll
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\obj\Debug\ListBoxSample.pdb
+c:\users\shinji\documents\visual studio 2010\Projects\ListBoxSample\ListBoxSample\obj\Debug\XapCacheFile.xml
