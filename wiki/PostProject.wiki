@@ -1,6 +1,30 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * 位置測位機能の状態を取得する
+  * http://techbooster.org/android/device/5240/
+  * https://techbooster.googlecode.com/svn/trunk/checkGpsStatus/
+
+ * アプリの機能ごとにショートカットを作る
+  * http://techbooster.org/android/ui/6751/
+  * https://techbooster.googlecode.com/svn/trunk/makeShortcut/
+
+ * ボタンの使い方 / Getting Started
+  * http://techbooster.org/android/ui/8044/
+  * https://techbooster.googlecode.com/svn/trunk/Button/
+
+ * ToggleButtonを使ってON/OFFを切り替える / Getting Started
+  * http://techbooster.org/android/ui/9445/
+  * https://techbooster.googlecode.com/svn/trunk/ToggleButtonActivity/
+
+ * Gelleryを使って画像を一覧表示する / Getting Started
+  * http://techbooster.org/android/ui/9854/
+  * https://techbooster.googlecode.com/svn/trunk/GalleryActivity/
+
+ * 位置情報を取得するには / Getting Started
+  * http://techbooster.org/android/device/11340/
+  * https://techbooster.googlecode.com/svn/trunk/Gps/
+
  * ViewFlipperを利用して、Viewを切り替える/Getting Started
   * http://techbooster.org/event/12398/
   * http://techbooster.googlecode.com/svn/trunk/ViewFlipperActivityGS/
