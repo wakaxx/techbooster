@@ -967,7 +967,9 @@
   * http://techbooster.org/android/3483
   * http://techbooster.googlecode.com/svn/trunk/OnOffFragmentSample
 
-
+ * RingtonePreferenceを使って、端末の音データを使用する。
+  * http://techbooster.org/android/4040
+  * http://techbooster.googlecode.com/svn/trunk/RingtoneSample
 
 
 
