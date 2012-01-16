@@ -951,6 +951,9 @@
   * http://techbooster.org/android/11871/
   * http://techbooster.googlecode.com/svn/trunk/TimePickerSample/
 
+ * NDKを使って、nativeに処理をさせる
+  * http://techbooster.org/android/2830
+  * http://techbooster.googlecode.com/svn/trunk/NativeSample2/
 
 
 
