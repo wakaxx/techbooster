@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kobashin.sample.userprofile"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+	<!-- UserProfileの読み込みに必要 -->
+	<uses-permission android:name="android.permission.READ_PROFILE" />
+	<!-- UserProfileの書き込みに必要 -->
+	<uses-permission android:name="android.permission.WRITE_PROFILE" />
+	
+	<uses-permission android:name="android.permission.READ_CONTACTS" /> 
+	
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name="org.jpn.techbooster.sample.getuserprofilesample.GetUserProfileSampleActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

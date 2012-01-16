@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, SampleTextViewActivity!</string>
+	<string name="app_name">SampleTextView</string>
+	<string name="small_text">標準のちいさいサイズ表示</string>
+	<string name="medium_text">標準のふつうサイズ表示</string>
+	<string name="large_text">標準のおおきなサイズ表示</string>
+	<string name="edit_size">表示サイズの指定</string>
+	<string name="edit_color_xml">色の変更(XML指定) 赤</string>
+	<string name="edit_color">色の変更 青</string>
+	<string name="up">上寄せのてきすと</string>
+	<string name="down">下寄せのてきすと</string>
+	<string name="left_image">左側に画像</string>
+	<string name="right_image">右側に画像	</string>
+	<string name="style_and_font">スタイルとフォントの指定</string>
+	<string name="origin_font"> Original Font</string>
+</resources>
