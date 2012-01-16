@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DropBoxSampleActivity!</string>
+    <string name="app_name">DropBoxSample</string>
+    <string name="auth_activity_button_text">DropBox認証</string>
+
+</resources>
