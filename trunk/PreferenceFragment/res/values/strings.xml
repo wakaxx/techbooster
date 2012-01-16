@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">PreferenceFragmentSample</string>
+<string name="checkbox_title_1">Checkbox Title 1</string>
+<string name="checkbox_summary_1">Checkbox Summary 1</string>
+<string name="title_1">title 1</string>
+<string name="title_2">title 2</string>
+<string name="edittext_title_1">EditText Title 1</string>
+<string name="edittext_summary_1">EditText Summary 1</string>
+<string name="dialog_title_1">Dialog Title 1</string>
+</resources>
