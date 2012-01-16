@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.jp.techbooster.sample.tcblivewallpaper"
+	android:versionCode="1" android:versionName="1.0">
+	<!-- uses-featureタグに android.software.live_wallpaperを指定する -->
+	<uses-feature android:name="android.software.live_wallpaper" />
+	<uses-sdk android:minSdkVersion="7" />
+
+
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<service android:label="TcbLiveWallpaperSample" android:name=".LiveWallpaperSample"
+			android:permission="android.permission.BIND_WALLPAPER">
+			<intent-filter>
+				<action android:name="android.service.wallpaper.WallpaperService" />
+			</intent-filter>
+			<meta-data android:name="android.service.wallpaper"
+				android:resource="@xml/res_sample" />
+		</service>
+	</application>
+</manifest>

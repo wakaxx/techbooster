@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="TcbLiveWallpaper2 Setting">
+  <ListPreference
+      android:key="prefKey"
+      android:title="SampleSetting"
+      android:entries="@array/entries_list_preference"
+      android:entryValues="@array/entryvalues_list_preference" />
+</PreferenceScreen>

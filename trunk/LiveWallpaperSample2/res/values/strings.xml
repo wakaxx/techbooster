@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">TcbLiveWallpaper2</string>
+    <string name="explain_text">This is a sample text </string>
+</resources>

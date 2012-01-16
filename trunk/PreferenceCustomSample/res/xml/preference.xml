@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="PreferenceCategory - 1">
+		<PreferenceScreen android:summary="ソースコードのIntentから" 
+			android:title="Move Next Activity1"
+			android:key="preferenceKey1">
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="PreferenceCategory - 2">
+		<PreferenceScreen android:title="Move Next Activity2"
+			android:summary="Preference.xmlのIntentから"
+			android:key="preferenceKey2">
+			<intent android:action="android.intent.action.VIEW"
+				android:targetPackage="org.jpn.techbooster.PreferenceSample2"
+				android:targetClass="org.jpn.techbooster.PreferenceSample2.Sample2Activity" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen> 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<TextView android:layout_width="fill_parent" android:id="@+id/DefaultTextView"
+			android:layout_height="wrap_content" android:text="@string/hello" />
+		<TextView android:text="@string/small_text" android:id="@+id/SmallTextView"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:textAppearance="?android:attr/textAppearanceSmall"></TextView>
+		<TextView android:id="@+id/textSetting" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:id="@+id/MediumTextView"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="@string/medium_text" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:id="@+id/LargeTextView"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/large_text" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:text="@string/edit_size" android:id="@+id/editSize"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+		<TextView android:text="@string/edit_color_xml" android:id="@+id/editColorXML"
+			android:textColor="#FFff0000" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:text="@string/edit_color" android:id="@+id/editColor"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+
+
+		<TextView android:text="@string/up" android:id="@+id/up"
+			android:gravity="top" android:background="@color/aqua"
+			android:layout_width="fill_parent" android:layout_height="60dip"></TextView>
+		<TextView android:text="@string/down" android:id="@+id/down"
+			android:layout_width="fill_parent" android:layout_height="60dip"></TextView>
+			
+		<TextView android:text="@string/left_image" android:id="@+id/left_image" android:drawableLeft="@drawable/tb"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+		<TextView android:text="@string/right_image" android:id="@+id/right_image"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+
+		<TextView android:text="@string/style_and_font" android:id="@+id/style_and_font"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+		<TextView android:text="@string/origin_font" android:id="@+id/origin_font"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+</ScrollView>

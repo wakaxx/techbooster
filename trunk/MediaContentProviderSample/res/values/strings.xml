@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainSample!</string>
+    <string name="app_name">tcbSample_ContentProvider_Media</string>
+</resources>
