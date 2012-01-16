@@ -955,6 +955,18 @@
   * http://techbooster.org/android/2830
   * http://techbooster.googlecode.com/svn/trunk/NativeSample2/
 
+ * PreferenceFragmentを使って２Paneな設定画面を作成する
+  * http://techbooster.org/android/3052
+  * http://techbooster.googlecode.com/svn/trunk/PreferenceFragment/
+
+ * Fragmentを使ってMenuを動的に作成する
+  * http://techbooster.org/android/3220
+  * http://techbooster.googlecode.com/svn/trunk/FragmentMenu
+
+ * Fragmentを動的に変化させる
+  * http://techbooster.org/android/3483
+  * http://techbooster.googlecode.com/svn/trunk/OnOffFragmentSample
+
 
 
 
