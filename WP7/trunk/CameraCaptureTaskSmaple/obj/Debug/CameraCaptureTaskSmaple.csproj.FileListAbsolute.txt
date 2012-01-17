@@ -1,0 +1,13 @@
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\Bin\Debug\ApplicationIcon.png
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\Bin\Debug\Background.png
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\Bin\Debug\CameraCaptureTaskSmaple.dll
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\Bin\Debug\CameraCaptureTaskSmaple.pdb
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\obj\Debug\ResolveAssemblyReference.cache
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\obj\Debug\App.g.i.cs
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\obj\Debug\MainPage.g.i.cs
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\obj\Debug\CameraCaptureTaskSmaple.g.resources
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\obj\Debug\CameraCaptureTaskSmaple.dll
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\obj\Debug\CameraCaptureTaskSmaple.pdb
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\Bin\Debug\AppManifest.xaml
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\Bin\Debug\CameraCaptureTaskSmaple.xap
+c:\users\shinji\documents\visual studio 2010\Projects\CameraCaptureTaskSmaple\CameraCaptureTaskSmaple\obj\Debug\XapCacheFile.xml
