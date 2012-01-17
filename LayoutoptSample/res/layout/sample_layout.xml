@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:src="@drawable/okomedayonn" />
+	<LinearLayout android:id="@+id/layout1"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/hello" />
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:stretchColumns="2">
+				<TableRow android:baselineAligned="false">
+					<Button android:id="@+id/button2" android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:text="Button"
+						></Button>
+					<Button android:id="@+id/button1" android:text="Button"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"></Button>
+				</TableRow>
+			</TableLayout>
+		</LinearLayout>
+		<EditText android:layout_height="wrap_content" android:id="@+id/editText1"
+			android:layout_width="fill_parent" android:text="EditText"></EditText>
+	</LinearLayout>
+</FrameLayout>
