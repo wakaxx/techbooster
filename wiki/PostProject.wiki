@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * センサーを利用する / Getting Started
+  * http://techbooster.org/android/device/12524/
+  * https://techbooster.googlecode.com/svn/trunk/Sensor/
+
  * 位置測位機能の状態を取得する
   * http://techbooster.org/android/device/5240/
   * https://techbooster.googlecode.com/svn/trunk/checkGpsStatus/
