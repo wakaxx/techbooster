@@ -2,6 +2,10 @@
 
 = Android記事一覧 =
  * センサーを利用する / Getting Started
+  * http://techbooster.org/android/ui/13182/
+  * https://techbooster.googlecode.com/svn/trunk/SystemOverlayLayer/
+
+ * センサーを利用する / Getting Started
   * http://techbooster.org/android/device/12524/
   * https://techbooster.googlecode.com/svn/trunk/Sensor/
 
