@@ -1,0 +1,15 @@
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\Bin\Debug\ApplicationIcon.png
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\Bin\Debug\Background.png
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\Bin\Debug\ApplicationBarSample.dll
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\Bin\Debug\ApplicationBarSample.pdb
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\Bin\Debug\AppManifest.xaml
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\Bin\Debug\ApplicationBarSample.xap
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\obj\Debug\App.g.i.cs
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\obj\Debug\MainPage.g.i.cs
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\obj\Debug\ApplicationBarSample.g.resources
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\obj\Debug\ApplicationBarSample.dll
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\obj\Debug\ApplicationBarSample.pdb
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\obj\Debug\XapCacheFile.xml
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\Bin\Debug\icons\appbar.cancel.rest.png
+C:\Users\Shinji\documents\visual studio 2010\Projects\ApplicationBarSample\ApplicationBarSample\Bin\Debug\icons\appbar.check.rest.png
