@@ -1,6 +1,10 @@
 #summary TechBooster記事とコメント、リポジトリ情報
 
 = Android記事一覧 =
+ * 長押し操作で表示されるContextMenuを使う/Getting Started
+  * http://techbooster.org/android/ui/13709/
+  * https://techbooster.googlecode.com/svn/trunk/ContextMenu/
+
  * センサーを利用する / Getting Started
   * http://techbooster.org/android/ui/13182/
   * https://techbooster.googlecode.com/svn/trunk/SystemOverlayLayer/
