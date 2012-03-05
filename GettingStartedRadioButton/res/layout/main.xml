@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<RadioGroup android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:id="@+id/RadioGroupOs">
+	    <RadioButton android:text="Android"
+	        android:id="@+id/RadioButtonAndroid"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content">
+	        </RadioButton>
+	    <RadioButton android:text="iOS"
+	        android:id="@+id/RadioButtoniOS"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	        </RadioButton>
+	    <RadioButton android:text="WP7"
+	        android:id="@+id/RadioButtonWP7"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	        </RadioButton>
+	</RadioGroup>
+	<RadioGroup android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:id="@+id/RadioGroupCarrier">
+	    <RadioButton android:text="SoftBank"
+	        android:id="@+id/RadioButtonSoftBank"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content">
+	        </RadioButton>
+	    <RadioButton android:text="docomo"
+	        android:id="@+id/RadioButtonDocomo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	        </RadioButton>
+	    <RadioButton android:text="au"
+	        android:id="@+id/RadioButtonAu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	        </RadioButton>
+	</RadioGroup>
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<Button android:text="OS Check"
+			android:id="@+id/checkButtonOs"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			</Button>
+		<Button android:text="OS Clear"
+			android:id="@+id/clearButtonOs"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			</Button>
+		</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<Button android:text="Carrier Check"
+			android:id="@+id/checkButtonCarrier"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			</Button>
+		<Button android:text="Carrier Clear"
+			android:id="@+id/clearButtonCarrier"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			</Button>
+		</LinearLayout>
+</LinearLayout>
