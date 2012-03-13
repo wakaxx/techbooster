@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PINOAuthActivity!</string>
+    <string name="app_name">PINOAuth</string>
+    <string name="OK">OK</string>
+    <string name="label_verify_access_twitter">認証のためにTwitterに接続します。 \n宜しいですか？</string>
+    <string name="label_input_pin_code">ブラウザで表示されたPINを入力してください。</string>
+    <string name="btn_auth">認証</string>
+    <string name="et_hint_input_pin">PINを入力してください</string>
+    <string name="err_invalid_pin">正しいPINを入力してください</string>
+    <string name="err_failed_auth">認証に失敗しました</string>
+
+</resources>
