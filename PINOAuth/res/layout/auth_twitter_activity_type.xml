@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_input_pin_code"/>
+    
+    <EditText android:id="@+id/et_input_pin"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_hint_input_pin"/>
+    
+    <Button android:id="@+id/btn_auth_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_auth"/>
+
+</LinearLayout>
