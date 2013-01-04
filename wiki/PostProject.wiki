@@ -983,6 +983,9 @@
   * http://techbooster.org/android/4040
   * http://techbooster.googlecode.com/svn/trunk/RingtoneSample
 
+ * AsyncTaskLoaderを利用した非同期処理を行う
+  * http://techbooster.org/android/application/13492/
+  * http://techbooster.googlecode.com/svn/trunk/LoaderSample
 
 
 
